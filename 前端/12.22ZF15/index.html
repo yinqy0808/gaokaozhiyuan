@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>山东省扬帆启航高考志愿智能决策平台</title>
+    <meta name="keywords" content="山东省,扬帆起航,高考志愿智能决策平台">
+    <meta name="description" content="扬帆起航高考志愿智能决策平台创办于2021年">
+    <meta name="others" content="html,java,javascript,jquery,缕缕书香胜饭香
+           博览群书添雅趣">
+<link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+//图片滚动 调用方法 imgscroll({speed: 30,amount: 1,dir: "up"});
+$.fn.imgscroll = function(o){
+	var defaults = {
+		speed: 40,
+		amount: 0,
+		width: 1,
+		dir: "left"
+	};
+	o = $.extend(defaults, o);
+	
+	return this.each(function(){
+		var _li = $("li", this);
+		_li.parent().parent().css({overflow: "hidden", position: "relative"}); //div
+		_li.parent().css({margin: "0", padding: "0", overflow: "hidden", position: "relative", "list-style": "none"}); //ul
+		_li.css({position: "relative", overflow: "hidden"}); //li
+		if(o.dir == "left") _li.css({float: "left"});
+		
+		//初始大小
+		var _li_size = 0;
+		for(var i=0; i<_li.size(); i++)
+			_li_size += o.dir == "left" ? _li.eq(i).outerWidth(true) : _li.eq(i).outerHeight(true);
+		
+		//循环所需要的元素
+		if(o.dir == "left") _li.parent().css({width: (_li_size*3)+"px"});
+		_li.parent().empty().append(_li.clone()).append(_li.clone()).append(_li.clone());
+		_li = $("li", this);
+
+		//滚动
+		var _li_scroll = 0;
+		function goto(){
+			_li_scroll += o.width;
+			if(_li_scroll > _li_size)
+			{
+				_li_scroll = 0;
+				_li.parent().css(o.dir == "left" ? { left : -_li_scroll } : { top : -_li_scroll });
+				_li_scroll += o.width;
+			}
+				_li.parent().animate(o.dir == "left" ? { left : -_li_scroll } : { top : -_li_scroll }, o.amount);
+		}
+		
+		//开始
+		var move = setInterval(function(){ goto(); }, o.speed);
+		_li.parent().hover(function(){
+			clearInterval(move);
+		},function(){
+			clearInterval(move);
+			move = setInterval(function(){ goto(); }, o.speed);
+		});
+	});
+}
+//友情链接下拉框跳转弹出新窗口
+function frlink(selObj){
+window.open(selObj.options[selObj.selectedIndex].value);}
+
+</script>
+
+</head>
+
+<body>
+<div id="hearder2" class="clearfix">
+	<div class="logo">
+   	  <img src="images/前程似锦logo.png">
+  </div>
+  <div class="logo-name">高考志愿智能决策平台</div>
+  <div class="form-tools">
+   	  <form id="search" name="search" method="post">
+      	<div class="tools-link" style="text-align: center">
+            赠言：博览群书添雅趣<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缕缕书香胜饭香
+        </div>
+  	  </form>
+    </div>
+</div>
+<div id="menu-box" class="clearfix" >
+	<ul>
+    	<li><a href="index.html">首页</a></li>
+        <li><a href="院校库.html">院校库</a></li>
+        <li><a href="专业库.html">专业库</a></li>
+        <li><a href="智能填报.html">智能填报</a></li>
+        <li><a href="高考资讯/高考常识(高考资讯首页).html">高考资讯</a></li>
+        <li><a href="联系我们.html">联系我们</a></li>
+    </ul>
+</div>
+<div id="slider-box" style="background:url(images/slider1.jpg) center center;"></div>
+<!-- index1-div1 -->
+<div id="index1-div1" class="clearfix">
+	<div class="index1-left675">
+    	<div class="title-box">中心简介</div>
+        <p style="font-size: 17px;font-family: 宋体"><img src="images/p-img.jpg" align="left">山东省扬帆启航高考志愿智能决策平台创办于2021年，并于当年正式开始运行。平台旨在帮助学生和家长能够更科学的填报志愿。本平台提供了院校库、专业库、高考资讯等功能，便于考生了解各个院校、专业以及高考的相关资讯等信息。同时，平台开放了智能填报功能，学生可以输入自己的条件，平台将推荐出符合考生自身条件的平行志愿表。</p>
+    </div>
+    <div class="index1-right300">
+    	<div class="title-box">高考常识<a href="高考资讯/高考常识(高考资讯首页).html" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
+          <ul>
+              <li><a href="高考资讯/所有材料/高考常识/优师计划九大热点问题解答.html">优师计划九大热点问题解答</a><span>2021-08-19</span></li>
+              <li><a href="高考资讯/所有材料/高考常识/优师计划：大学期间“两免一补”，毕业有编、有岗！.html">优师计划：大学期间“两免一补”，毕业有编、有岗！</a><span>2021-08-05</span></li>
+              <li><a href="高考资讯/所有材料/高考常识/2020年是否报考专项计划，这八个问题给你答案.html">2020年是否报考专项计划，这八个问题给你答案</a><span>2020-07-07</span></li>
+              <li><a href="高考资讯/所有材料/高考常识/何为批次线、调档线、录取线？.html">何为批次线、调档线、录取线？</a><span>2019-06-06</span></li>
+          </ul>
+    </div>
+</div>
+<!-- index1-div2 -->
+<div id="index1-div2" class="clearfix">
+	<div class="index1-left675">
+    	<div class="index1-li-box">
+    	<div class="index1-left330">
+        	<div class="title-box">招考动态<a href="高考资讯/招考动态.html" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
+            <img src="images/主页图片（左）.jpg" style="width:330px; height:140px; margin:5px 0;">
+            <ul>
+                <li><a href="高考资讯/所有材料/招考动态/教育部等九部门关于印发《中西部欠发达地区优秀教师定向培养计划》的通知.html">教育部等九部门关于印发《中西部欠发达地区优秀教师定向培养计划》的通知</a><span>2021-08-03</span></li>
+                <li><a href="高考资讯/所有材料/招考动态/2021年重点高校继续面向农村等地区实施招生专项计划.html">2021年重点高校继续面向农村等地区实施招生专项计划</a><span>2021-04-16</span></li>
+                <li><a href="高考资讯/所有材料/招考动态/教育部关于印发《职业教育专业目录（2021年）》的通知.html">教育部关于印发《职业教育专业目录（2021年）》的通知</a><span>2021-03-22</span></li>
+                <li><a href="高考资讯/所有材料/招考动态/教育部关于做好2021年普通高校招生工作的通知.html">教育部关于做好2021年普通高校招生工作的通知</a><span>2021-02-20</span></li>
+                <li><a href="高考资讯/所有材料/招考动态/教育部办公厅关于做好2021年普通高校部分特殊类型招生工作的通知.html">教育部办公厅关于做好2021年普通高校部分特殊类型招生工作的通知</a><span>2021-02-08</span></li>
+            </ul>
+        </div>
+        <div class="index1-right330">
+        	<div class="title-box">热点查询<a href="高考资讯/热点查询.html" class="title-more" title="查看更多"><img src="images/12.gif"></a></div>
+            <img src="images/主页照片（右）.jpg" style="width:330px; height:140px; margin:5px 0;">
+            <ul>
+                <li><a href="高考资讯/所有材料/热点查询/湖南：准高三需要知道的一些事！.html">湖南：准高三需要知道的一些事！</a><span>2021-08-20</span></li>
+                <li><a href="高考资讯/所有材料/热点查询/湖南：2021年高考和录取有哪些新变化？2022届新高三重点参考！.html">湖南：2021年高考和录取有哪些新变化？2022届新高三重点参考！</a><span>2021-08-20</span></li>
+                <li><a href="高考资讯/所有材料/热点查询/四川：快看！你的录取通知书可以这样用！还能享受各种福利优惠！.html">四川：快看！你的录取通知书可以这样用！还能享受各种福利优惠！</a><span>2021-08-16</span></li>
+                <li><a href="高考资讯/所有材料/热点查询/大一新生，准备好报到了吗.html">大一新生，准备好报到了吗</a><span>2021-08-16</span></li>
+                <li><a href="高考资讯/所有材料/热点查询/@2021级准大学生，请收下这份录取通知书辨别指南.html">@2021级准大学生，请收下这份录取通知书辨别指南</a><span>2021-08-13</span></li>
+            </ul>
+        </div>
+        </div>
+        <!-- slider -->
+        <div class="index1-pic-gun">
+        	<div class="title-box">高校风采</div>
+            <div class="index1-scrollleft clearfix">
+                <ul>
+                    <li>
+                        <a><img alt="北京大学" src="images/北京大学.jpg"/></a>
+                        <span>北京大学</span>
+                    </li>
+                    <li>
+                        <a><img alt="清华大学" src="images/清华大学.jpg"/></a>
+                        <span>清华大学</span>
+                    </li>
+                    <li>
+                        <a><img alt="山东大学" src="images/山东大学.jpg"/></a>
+                        <span>山东大学</span>
+                    </li>
+                    <li>
+                        <a><img alt="南京大学" src="images/南京大学.jpg"/></a>
+                        <span>南京大学</span>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            $(document).ready(function(){
+            
+                $(".index1-scrollleft").imgscroll({
+                    speed: 40,    //图片滚动速度
+                    amount: 0,    //图片滚动过渡时间
+                    width: 1,     //图片滚动步数
+                    dir: "left"   // "left" 或 "up" 向左或向上滚动
+                });
+                
+            });
+            </script>
+        </div>
+        <!-- slider end -->
+    </div>
+
+    <div class="index1-right300">
+        <div class="index1-login-box">
+          <div class="title-box">通知通告</div>
+                <ul>
+                    <br>
+                    <li><a href="高考资讯/所有材料/通知通告/教育部发布预警：高校招生录取期间，谨防诈骗.html"
+                    style="font-size: 13px;font-family: 宋体">教育部发布预警：高校招生录取期间，谨防诈骗</a></li>
+                    <hr><br>
+                    <li><a href="高考资讯/所有材料/通知通告/教育部公布2021年高考网上咨询周时间安排.html"
+                           style="font-size: 13px;font-family: 宋体">教育部公布2021年高考网上咨询周时间安排</a></li>
+                    <hr><br>
+                    <li><a href="高考资讯/所有材料/通知通告/关于2020年全国高考时间安排的公告.html"
+                           style="font-size: 13px;font-family: 宋体">关于2020年全国高考时间安排的公告</a></li>
+                    <hr><br>
+                    <li><a href="高考资讯/所有材料/通知通告/关于2020年全国高考时间安排的公告.html"
+                           style="font-size: 13px;font-family: 宋体">关于2020年全国高考时间安排的公告</a></li>
+                </ul>
+        </div>
+    </div>
+        <div class="index1-right300">
+		<div class="index1-list-menu">
+        	<div class="title-box">高考志愿填报</div>
+            <ul>
+            	<li><a href="高考资讯/所有材料/高考志愿填报/山东选考科目（专业限科情况）.html">专业限科情况</a></li>
+                <li><a href="高考资讯/所有材料/高考志愿填报/普通类常规批第一次投档情况.html">2021年普通类常规批第一次投档</a></li>
+                <li><a href="高考资讯/所有材料/高考志愿填报/普通类常规批第二次投档情况.html">2021年普通类常规批第二次投档</a></li>
+                <li><a href="高考资讯/所有材料/高考志愿填报/普通类常规批第三次投档情况.html">2021年普通类常规批第三次投档</a></li>
+                <li><a href="高考资讯/所有材料/高考志愿填报/一分一段表.html">2021年一分一段表</a></li>
+            </ul>
+    	</div>
+    </div>
+</div>
+<!-- div5 -->
+<div id="div5" class="clearfix">
+    <div class="link-box" style="text-align:center">
+    	<span>友情链接：</span>
+        <select onChange="frlink(this)" name="select" class="select-link">
+            <option selected >--- 教育类网站 ---</option>
+            <option value="https://www.sdzk.cn/Default.aspx">山东省教育招生考试院</option>
+            <option value="https://gkcx.eol.cn/">中国在线教育</option>
+            <option value="https://gaokao.chsi.com.cn/">阳光高考</option>
+        </select>
+        <select onChange="frlink(this)" name="select" class="select-link">
+            <option selected>--- 政府类网站 ---</option>
+            <option value="http://www.emic.edu.cn/">教育部教育管理信息中心</option>
+            <option value="http://www.moe.gov.cn/">中华人民共和国教育部</option>
+            <option value="http://edu.shandong.gov.cn/">山东省教育厅</option>
+        </select>
+        <select onChange="frlink(this)" name="select" class="select-link">
+            <option selected>--- 其他类网站 ---</option>
+            <option value="https://www.cnki.net/">中国知网</option>
+            <option value="https://yz.chsi.com.cn/">研招网</option>
+            <option value="https://www.baidu.com/">百度</option>
+        </select>
+    </div>
+</div>
+<div id="div6">2022山东省扬帆启航高考志愿智能决策平台 All rights reserved.</div>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+
+</body>
+</html>
+

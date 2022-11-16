@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>山东省扬帆启航高考志愿智能决策平台</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
+</head>
+
+<body>
+<div id="hearder2" class="clearfix">
+    <div class="logo">
+        <img src="images/前程似锦logo.png">
+    </div>
+    <div class="logo-name">高考志愿智能决策平台</div>
+    <div class="form-tools">
+        <form id="search" name="search" method="post">
+            <div class="tools-link" style="text-align: center">
+                赠言：博览群书添雅趣<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缕缕书香胜饭香
+            </div>
+        </form>
+    </div>
+</div>
+<div id="menu-box" class="clearfix" >
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="院校库.html">院校库</a></li>
+        <li><a href="专业库.html">专业库</a></li>
+        <li><a href="智能填报.html">智能填报</a></li>
+        <li><a href="高考资讯/高考常识(高考资讯首页).html">高考资讯</a></li>
+        <li><a href="联系我们.html">联系我们</a></li>
+
+    </ul>
+</div>
+<!-- detail -->
+<div class="主要区域" style="height: 900px">
+    <div class="选择区域">
+        <div class="选择1"><a href="#" target="_self" class="选择器">本科（普通教育）</a></div>
+    </div>
+    <div class="数据展示" id="CC">
+        <div class="门类" style="height: 800px">
+            <div class="标题1">门类</div>
+            <ul class="major">
+                <a href="#CC" target="_self" data-type="0"><li class="选项2">哲学</li></a>
+                <a href="#CC" target="_self" data-type="1"><li class="选项2">经济学</li></a>
+                <a href="#CC" target="_self" data-type="2"><li class="选项2">法学</li></a>
+                <a href="#CC" target="_self" data-type="3"><li class="选项2">教育学</li></a>
+                <a href="#CC" target="_self" data-type="4"><li class="选项2">文学</li></a>
+                <a href="#CC" target="_self" data-type="5"><li class="选项2">历史学</li></a>
+                <a href="#CC" target="_self" data-type="6"><li class="选项2">理学</li></a>
+                <a href="#CC" target="_self" data-type="7"><li class="选项2">工学</li></a>
+                <a href="#CC" target="_self" data-type="8"><li class="选项2">农学</li></a>
+                <a href="#CC" target="_self" data-type="9"><li class="选项2">医学</li></a>
+                <a href="#CC" target="_self" data-type="10"><li class="选项2">管理学</li></a>
+                <a href="#CC" target="_self" data-type="11"><li class="选项2">艺术学</li></a>
+            </ul>
+        </div>
+        <div class="专业类" style="height: 800px">
+            <div class="标题2">专业类</div>
+            <ul class="hide" id="0">
+                <a target="_self" data-type="0" class="选项a"><li class="选项2">哲学</li></a>
+            </ul>
+            <ul class="hide" id="1" >
+                <a target="_self" data-type="1" class="选项a"><li class="选项2">经济学类</li></a>
+                <a target="_self" data-type="2" class="选项a"><li class="选项2">财政学类</li></a>
+                <a target="_self" data-type="3" class="选项a"><li class="选项2">金融学类</li></a>
+                <a target="_self" data-type="4" class="选项a"><li class="选项2">经济与贸易类</li></a>
+            </ul>
+            <ul class="hide" id="2" >
+                <a  target="_self" data-type="5" class="选项a"><li class="选项2">法学类</li></a>
+                <a  target="_self" data-type="6" class="选项a"><li class="选项2">政治学类</li></a>
+                <a  target="_self" data-type="7" class="选项a"><li class="选项2">社会学类</li></a>
+                <a  target="_self" data-type="8" class="选项a"><li class="选项2">民族学类</li></a>
+                <a  target="_self" data-type="9" class="选项a"><li class="选项2">马克思主义理论类</li></a>
+                <a  target="_self" data-type="10" class="选项a"><li class="选项2">公安学类</li></a>
+            </ul>
+            <ul class="hide" id="3">
+                <a target="_self" data-type="11" class="选项a"><li class="选项2">教育学类</li></a>
+                <a target="_self" data-type="12" class="选项a"><li class="选项2">体育学类</li></a>
+            </ul>
+            <ul class="hide" id="4">
+                <a target="_self" data-type="13" class="选项a"><li class="选项2">中国语言文学类</li></a>
+                <a target="_self" data-type="14" class="选项a"><li class="选项2">外国语言文学类</li></a>
+                <a target="_self" data-type="15" class="选项a"><li class="选项2">新闻传播学类</li></a>
+
+            </ul>
+            <ul class="hide" id="5" >
+                <a target="_self" data-type="16" class="选项a"><li class="选项2">历史学类</li></a>
+            </ul>
+            <ul class="hide" id="6">
+                <a target="_self" data-type="17" class="选项a"><li class="选项2">数学类</li></a>
+                <a target="_self" data-type="18" class="选项a"><li class="选项2">物理学类</li></a>
+                <a target="_self" data-type="19" class="选项a"><li class="选项2">化学类</li></a>
+                <a target="_self" data-type="20" class="选项a"><li class="选项2">天文学类</li></a>
+                <a target="_self" data-type="21" class="选项a"><li class="选项2">地理科学类</li></a>
+                <a target="_self" data-type="22" class="选项a"><li class="选项2">大气科学类</li></a>
+                <a target="_self" data-type="23" class="选项a"><li class="选项2">海洋科学类</li></a>
+                <a target="_self" data-type="24" class="选项a"><li class="选项2">地球物理学类</li></a>
+                <a target="_self" data-type="25" class="选项a"><li class="选项2">地质学类</li></a>
+                <a target="_self" data-type="26" class="选项a"><li class="选项2">生物科学类</li></a>
+                <a target="_self" data-type="27" class="选项a"><li class="选项2">心理学类</li></a>
+                <a target="_self" data-type="28" class="选项a"><li class="选项2">统计学类</li></a>
+            </ul>
+            <ul class="hide"  id="7">
+                <a target="_self" data-type="29" class="选项a"><li class="选项2">力学类</li></a>
+                <a target="_self" data-type="30" class="选项a"><li class="选项2">机械类</li></a>
+                <a target="_self" data-type="31" class="选项a"><li class="选项2">仪器类</li></a>
+                <a target="_self" data-type="32" class="选项a"><li class="选项2">材料类</li></a>
+                <a target="_self" data-type="33" class="选项a"><li class="选项2">能源动力类</li></a>
+                <a target="_self" data-type="34" class="选项a"><li class="选项2">电气类</li></a>
+                <a target="_self" data-type="35" class="选项a"><li class="选项2">电子信息类</li></a>
+                <a target="_self" data-type="36" class="选项a"><li class="选项2">自动化类</li></a>
+                <a target="_self" data-type="37" class="选项a"><li class="选项2">计算机类</li></a>
+                <a target="_self" data-type="38" class="选项a"><li class="选项2">土木类</li></a>
+                <a target="_self" data-type="39" class="选项a"><li class="选项2">水利类</li></a>
+                <a target="_self" data-type="40" class="选项a"><li class="选项2">测绘类</li></a>
+                <a target="_self" data-type="41" class="选项a"><li class="选项2">化工与制药类</li></a>
+                <a target="_self" data-type="42" class="选项a"><li class="选项2">地质类</li></a>
+                <a target="_self" data-type="43" class="选项a"><li class="选项2">矿业类</li></a>
+            </ul>
+            <ul class="hide" id="8">
+                <a target="_self" data-type="44" class="选项a"><li class="选项2">植物生产类</li></a>
+                <a target="_self" data-type="45" class="选项a"><li class="选项2">自然保护与环境生态类</li></a>
+                <a target="_self" data-type="46" class="选项a"><li class="选项2">动物生产类</li></a>
+                <a target="_self" data-type="47" class="选项a"><li class="选项2">动物医学类</li></a>
+                <a target="_self" data-type="48" class="选项a"><li class="选项2">林学类</li></a>
+                <a target="_self" data-type="49" class="选项a"><li class="选项2">水产类</li></a>
+                <a target="_self" data-type="50" class="选项a"><li class="选项2">草学类</li></a>
+
+            </ul>
+            <ul class="hide" id="9">
+                <a target="_self" data-type="51" class="选项a"><li class="选项2">基础医学类</li></a>
+                <a target="_self" data-type="52" class="选项a"><li class="选项2">临床医学类</li></a>
+                <a target="_self" data-type="53" class="选项a"><li class="选项2">口腔医学类</li></a>
+                <a target="_self" data-type="54" class="选项a"><li class="选项2">公共卫生与预防医学类</li></a>
+                <a target="_self" data-type="55" class="选项a"><li class="选项2">中医学类</li></a>
+                <a target="_self" data-type="56" class="选项a"><li class="选项2">中西医结合类</li></a>
+                <a target="_self" data-type="57" class="选项a"><li class="选项2">药学类</li></a>
+                <a target="_self" data-type="58" class="选项a"><li class="选项2">中药学类</li></a>
+                <a target="_self" data-type="59" class="选项a"><li class="选项2">法医学类</li></a>
+                <a target="_self" data-type="60" class="选项a"><li class="选项2">医学技术类</li></a>
+                <a target="_self" data-type="61" class="选项a"><li class="选项2">护理学类</li></a>
+            </ul>
+            <ul class="hide" id="10">
+                <a target="_self" data-type="62" class="选项a"><li class="选项2">管理科学与工程类</li></a>
+                <a target="_self" data-type="63" class="选项a"><li class="选项2">工商管理类</li></a>
+                <a target="_self" data-type="64" class="选项a"><li class="选项2">农业经济管理类</li></a>
+                <a target="_self" data-type="65" class="选项a"><li class="选项2">公共管理类</li></a>
+                <a target="_self" data-type="66" class="选项a"><li class="选项2">图书情报与档案管理类</li></a>
+                <a target="_self" data-type="67" class="选项a"><li class="选项2">物流管理与工程类</li></a>
+                <a target="_self" data-type="68" class="选项a"><li class="选项2">工业工程类</li></a>
+                <a target="_self" data-type="69" class="选项a"><li class="选项2">电子商务类</li></a>
+                <a target="_self" data-type="70" class="选项a"><li class="选项2">旅游管理类</li></a>
+            </ul>
+            <ul class="hide" id="11">
+                <a target="_self" data-type="71" class="选项a"><li class="选项2">艺术学理论类</li></a>
+                <a target="_self" data-type="72" class="选项a"><li class="选项2">音乐与舞蹈学类</li></a>
+                <a target="_self" data-type="73" class="选项a"><li class="选项2">戏曲与影视学类</li></a>
+                <a target="_self" data-type="74" class="选项a"><li class="选项2">美术学类</li></a>
+                <a target="_self" data-type="75" class="选项a"><li class="选项2">设计学类</li></a>
+            </ul>
+
+        </div>
+        <div class="专业名称" style="height: 800px " >
+            <div class="标题3">专业名称</div>
+            <ul class="hide" data-type="0">
+                <li class="选项2">哲学</li>
+                <li class="选项2">逻辑学</li>
+                <li class="选项2">宗教学</li>
+                <li class="选项2">伦理学</li>
+            </ul>
+            <ul class="hide" data-type="1">
+                <li class="选项2">经济学</li>
+                <li class="选项2">经济统计学</li>
+                <li class="选项2">国民经济管理</li>
+                <li class="选项2">资源与环境经济学</li>
+                <li class="选项2">商务经济学</li>
+                <li class="选项2">能源经济</li>
+                <li class="选项2">劳动统计学</li>
+                <li class="选项2">经济工程</li>
+                <li class="选项2">数字经济</li>
+            </ul>
+            <ul class="hide" data-type="2">
+                <li class="选项2">财政学</li>
+                <li class="选项2">税收学</li>
+            </ul>
+            <ul class="hide" data-type="3">
+                <li class="选项2">金融学</li>
+                <li class="选项2">金融工程</li>
+                <li class="选项2">保险学</li>
+                <li class="选项2">投资学</li>
+                <li class="选项2">金融数学</li>
+                <li class="选项2">信用管理</li>
+                <li class="选项2">经济与金融</li>
+                <li class="选项2">精算学</li>
+                <li class="选项2">互联网金融</li>
+                <li class="选项2">金融科技</li>
+            </ul>
+            <ul class="hide" data-type="4">
+                <li class="选项2">国际经贸</li>
+                <li class="选项2">贸易经济</li>
+            </ul>
+            <ul class="hide" data-type="5">
+                <li class="选项2">法学</li>
+                <li class="选项2">知识产权</li>
+                <li class="选项2">监狱学</li>
+                <li class="选项2" style="width: 270px">信用风险管理与法律防控</li>
+                <li class="选项2">国际贸易规则</li>
+                <li class="选项2">司法警察学</li>
+                <li class="选项2">社区矫正</li>
+            </ul>
+            <ul class="hide" data-type="6">
+                <li class="选项2">政治学与行政学</li>
+                <li class="选项2">国际政治</li>
+                <li class="选项2">外交学</li>
+                <li class="选项2">国际事务与国际关系</li>
+                <li class="选项2" style="width: 270px">政治学、经济学与哲学</li>
+                <li class="选项2">国际组织与全球治理</li>
+            </ul>
+            <ul class="hide" data-type="7">
+                <li class="选项2">社会学</li>
+                <li class="选项2">社会工作</li>
+                <li class="选项2">人类学</li>
+                <li class="选项2">女性学</li>
+                <li class="选项2">家政学</li>
+                <li class="选项2">老年学</li>
+            </ul>
+            <ul class="hide" data-type="8">
+                <li class="选项2">民族学</li>
+            </ul>
+            <ul class="hide" data-type="9">
+                <li class="选项2">科学社会主义</li>
+                <li class="选项2">中国共产党历史</li>
+                <li class="选项2">思想政治教育</li>
+                <li class="选项2">马克思主义理论</li>
+            </ul>
+            <ul class="hide" data-type="10">
+                <li class="选项2">治安学</li>
+                <li class="选项2">侦查学</li>
+                <li class="选项2">边防管理</li>
+                <li class="选项2">禁毒学</li>
+                <li class="选项2">警犬技术</li>
+                <li class="选项2">经济犯罪侦查</li>
+                <li class="选项2">边防指挥</li>
+                <li class="选项2">消防指挥</li>
+                <li class="选项2">警卫学</li>
+                <li class="选项2">公安情报学</li>
+                <li class="选项2">犯罪学</li>
+                <li class="选项2">公安管理学</li>
+                <li class="选项2">涉外警务</li>
+                <li class="选项2">国内安全保卫</li>
+                <li class="选项2">警务指挥与战术</li>
+            </ul>
+            <ul class="hide" data-type="11">
+                <li class="选项2">教育学</li>
+                <li class="选项2">体育科学</li>
+                <li class="选项2">人文教育</li>
+                <li class="选项2">教育技术学</li>
+                <li class="选项2">艺术教育</li>
+                <li class="选项2">学前教育</li>
+                <li class="选项2">小学教育</li>
+                <li class="选项2">特殊教育</li>
+                <li class="选项2">华文教育</li>
+                <li class="选项2">教育康复学</li>
+                <li class="选项2">卫生教育</li>
+                <li class="选项2">认知科学与技术</li>
+            </ul>
+            <ul class="hide" data-type="12">
+                <li class="选项2">体育教育</li>
+                <li class="选项2">运动训练</li>
+                <li class="选项2">社会体育指导与管理</li>
+                <li class="选项2">武术与民族传统体育</li>
+                <li class="选项2">运动人体科学</li>
+                <li class="选项2">运动康复</li>
+                <li class="选项2">休闲体育</li>
+                <li class="选项2">体能训练</li>
+                <li class="选项2">冰雪运动</li>
+                <li class="选项2">电子竞技运动与管理</li>
+                <li class="选项2">智能体育工程</li>
+                <li class="选项2">体育旅游</li>
+                <li class="选项2">运动能力开发</li>
+            </ul>
+            <ul class="hide" data-type="13">
+                <li class="选项2">汉语言文学</li>
+                <li class="选项2">汉语言</li>
+                <li class="选项2">汉语国际教育</li>
+                <li class="选项2">中国少数民族语言文学</li>
+                <li class="选项2">古典文献学</li>
+                <li class="选项2">应用语言学</li>
+                <li class="选项2">秘书学</li>
+                <li class="选项2">中国语言与文化</li>
+                <li class="选项2">手语翻译</li>
+            </ul>
+            <ul class="hide" data-type="14">
+                <li class="选项2">桑戈语</li>
+                <li class="选项2">英语</li>
+                <li class="选项2">俄语</li>
+                <li class="选项2">德语</li>
+                <li class="选项2">法语</li>
+                <li class="选项2">西班牙语</li>
+                <li class="选项2">阿拉伯语</li>
+                <li class="选项2">日语</li>
+                <li class="选项2">波斯语</li>
+                <li class="选项2">朝鲜语</li>
+                <li class="选项2">菲律宾语</li>
+                <li class="选项2">语言学</li>
+                <li class="选项2">塔马齐格特语</li>
+                <li class="选项2">爪哇语</li>
+                <li class="选项2">旁遮普语</li>
+
+            </ul>
+            <ul class="hide" data-type="15">
+                <li class="选项2">新闻学</li>
+                <li class="选项2">广播电视学</li>
+                <li class="选项2">广告学</li>
+                <li class="选项2">传播学</li>
+                <li class="选项2">编辑出版学</li>
+                <li class="选项2">网络与新媒体</li>
+                <li class="选项2">数字出版</li>
+                <li class="选项2">时尚传播</li>
+                <li class="选项2">国际新闻与传播</li>
+            </ul>
+            <ul class="hide" data-type="16">
+                <li class="选项2">历史学</li>
+                <li class="选项2">世界史</li>
+                <li class="选项2">考古学</li>
+                <li class="选项2">文物与博物馆学</li>
+                <li class="选项2">文物保护技术</li>
+                <li class="选项2">外国语言与外国历史</li>
+                <li class="选项2">文化遗产</li>
+            </ul>
+            <ul class="hide" data-type="17">
+                <li class="选项2">数学与应用数学</li>
+                <li class="选项2">信息与计算科学</li>
+                <li class="选项2">数理基础科学</li>
+                <li class="选项2">数据计算及应用</li>
+            </ul>
+            <ul class="hide" data-type="18">
+                <li class="选项2">物理学</li>
+                <li class="选项2">应用物理学</li>
+                <li class="选项2">核物理</li>
+                <li class="选项2">声学</li>
+                <li class="选项2">系统科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="19">
+                <li class="选项2">化学</li>
+                <li class="选项2">应用化学</li>
+                <li class="选项2">化学生物学</li>
+                <li class="选项2">分子科学与工程</li>
+                <li class="选项2">能源化学</li>
+            </ul>
+            <ul class="hide" data-type="20">
+                <li class="选项2">天文学</li>
+
+            </ul>
+            <ul class="hide" data-type="21">
+                <li class="选项2">地理科学</li>
+                <li class="选项2">自然地理与资源环境</li>
+                <li class="选项2">人文地理与城乡规划</li>
+                <li class="选项2">地理学信息科学</li>
+            </ul>
+            <ul class="hide" data-type="22">
+                <li class="选项2">大气科学</li>
+                <li class="选项2">应用气象学</li>
+            </ul>
+            <ul class="hide" data-type="23">
+                <li class="选项2">海洋科学</li>
+                <li class="选项2">海洋技术</li>
+                <li class="选项2">海洋资源与环境</li>
+                <li class="选项2">军事海洋学</li>
+            </ul>
+            <ul class="hide" data-type="24">
+                <li class="选项2">地球物理学</li>
+                <li class="选项2">空间科学与技术</li>
+                <li class="选项2">防灾减灾科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="25">
+                <li class="选项2">地质学</li>
+                <li class="选项2">地球化学</li>
+                <li class="选项2">地球信息科学与技术</li>
+                <li class="选项2">古生物学</li>
+            </ul>
+            <ul class="hide" data-type="26">
+                <li class="选项2">生物科学</li>
+                <li class="选项2">生物技术</li>
+                <li class="选项2">生物信息学</li>
+                <li class="选项2">生态学</li>
+                <li class="选项2">整合科学</li>
+                <li class="选项2">神经科学</li>
+            </ul>
+            <ul class="hide" data-type="27">
+                <li class="选项2">心理学</li>
+                <li class="选项2">应用心理学</li>
+            </ul>
+            <ul class="hide" data-type="28">
+                <li class="选项2">统计学</li>
+                <li class="选项2">应用统计学</li>
+            </ul>
+            <ul class="hide" data-type="29">
+                <li class="选项2">理论与应用理学</li>
+                <li class="选项2">工程力学</li>
+            </ul>
+            <ul class="hide" data-type="30">
+                <li class="选项2">机械工程</li>
+                <li class="选项2" style="width: 270px">机械设计与制造及其自动化</li>
+                <li class="选项2">材料成型及控制工程</li>
+                <li class="选项2">机械电子工程</li>
+                <li class="选项2">工业设计</li>
+                <li class="选项2">过程装备与控制工程</li>
+                <li class="选项2">车辆工程</li>
+                <li class="选项2">汽车服务工程</li>
+                <li class="选项2">机械功能工艺技术</li>
+                <li class="选项2">微机电系统工程</li>
+                <li class="选项2">机电技术教育</li>
+                <li class="选项2">骑车维修工程教育</li>
+                <li class="选项2">智能制造工程</li>
+                <li class="选项2">智能车辆工程</li>
+                <li class="选项2">仿生科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="31">
+                <li class="选项2">测控技术与仪器</li>
+                <li class="选项2">精密仪器</li>
+                <li class="选项2">智能感知工程</li>
+            </ul>
+            <ul class="hide" data-type="32">
+                <li class="选项2">材料科学与工程</li>
+                <li class="选项2">材料物理</li>
+                <li class="选项2">材料化学</li>
+                <li class="选项2">冶金工程</li>
+                <li class="选项2">金属材料工程</li>
+                <li class="选项2">无机非金属材料工程</li>
+                <li class="选项2">高分子材料与工程</li>
+                <li class="选项2">复合材料与工程</li>
+                <li class="选项2">粉体材料科学与工程</li>
+                <li class="选项2">宝石及材料工艺学</li>
+                <li class="选项2">焊接技术与工程</li>
+                <li class="选项2">功能材料</li>
+                <li class="选项2">纳米材料与技术</li>
+                <li class="选项2">新能源材料与器件</li>
+                <li class="选项2">材料设计科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="33">
+                <li class="选项2">能源与动力工程</li>
+                <li class="选项2">能源与环境系统工程</li>
+                <li class="选项2">新能源科学与工程</li>
+                <li class="选项2">储能科学与工程</li>
+
+            </ul>
+            <ul class="hide" data-type="34">
+                <li class="选项2">电气工程及其自动化</li>
+                <li class="选项2">智能电网信息工程</li>
+                <li class="选项2">光源与照明</li>
+                <li class="选项2">电气工程与智能控制</li>
+                <li class="选项2">电机电器智能化</li>
+                <li class="选项2">电缆工程</li>
+            </ul>
+            <ul class="hide" data-type="35">
+                <li class="选项2">电子信息工程</li>
+                <li class="选项2">电子科学与技术</li>
+                <li class="选项2">通信工程</li>
+                <li class="选项2">微电子科学与工程</li>
+                <li class="选项2">光电信息科学与工程</li>
+                <li class="选项2">信息工程</li>
+                <li class="选项2">广播电视工程</li>
+                <li class="选项2">水声工程</li>
+                <li class="选项2">电子封装技术</li>
+                <li class="选项2"style="width: 270px">集成电路设计与集成系统</li>
+                <li class="选项2">医学信息工程</li>
+                <li class="选项2">电磁场与无线技术</li>
+                <li class="选项2">电波传播与天线</li>
+                <li class="选项2">电子信息科学与技术</li>
+                <li class="选项2">电信工程及管理</li>
+            </ul>
+            <ul class="hide" data-type="36">
+                <li class="选项2">自动化</li>
+                <li class="选项2">轨道信号与控制</li>
+                <li class="选项2">机器人工程</li>
+                <li class="选项2">邮政工程</li>
+                <li class="选项2">核电信息与控制工程</li>
+                <li class="选项2">智能装备与系统</li>
+                <li class="选项2">工业智能</li>
+            </ul>
+            <ul class="hide" data-type="37">
+                <li class="选项2">计算机科学与技术</li>
+                <li class="选项2">软件工程</li>
+                <li class="选项2">网络工程</li>
+                <li class="选项2">信息安全</li>
+                <li class="选项2">物联网工程</li>
+                <li class="选项2">数字媒体技术</li>
+                <li class="选项2">智能科学与技术</li>
+                <li class="选项2">空间信息与数字技术</li>
+                <li class="选项2">电子与计算机工程</li>
+                <li class="选项2"style="width: 270px">数据科学与与大数据技术</li>
+                <li class="选项2">网络空间安全</li>
+                <li class="选项2">新媒体技术</li>
+                <li class="选项2">电影制作</li>
+                <li class="选项2">保密技术</li>
+                <li class="选项2">服务科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="38">
+                <li class="选项2">土木工程</li>
+                <li class="选项2">建筑环境与能源应用工程</li>
+                <li class="选项2">给排水科学与工程</li>
+                <li class="选项2">建筑电气与智能化</li>
+                <li class="选项2">城市地下空间工程</li>
+                <li class="选项2">道路桥梁与渡河工程</li>
+                <li class="选项2">铁道工程</li>
+                <li class="选项2">智能建造</li>
+                <li class="选项2">土木、水利与海洋工程</li>
+                <li class="选项2">土木、水利与交通工程</li>
+            </ul>
+            <ul class="hide" data-type="39">
+                <li class="选项2">水利水电工程</li>
+                <li class="选项2">水文与水资源工程</li>
+                <li class="选项2">港口航道与海岸工程</li>
+                <li class="选项2">水务工程</li>
+                <li class="选项2">水利科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="40">
+                <li class="选项2">测绘工程</li>
+                <li class="选项2">遥感科学与技术</li>
+                <li class="选项2">导航工程</li>
+                <li class="选项2">地理国情监测</li>
+                <li class="选项2">地理空间信息工程</li>
+            </ul>
+            <ul class="hide" data-type="41">
+                <li class="选项2">化学工程与工艺</li>
+                <li class="选项2">制药工程</li>
+                <li class="选项2">资源循环科学与工程</li>
+                <li class="选项2">能源化学工程</li>
+                <li class="选项2" style="width: 270px">化学工程与工业生物工程</li>
+                <li class="选项2">化工安全工程</li>
+                <li class="选项2">涂料工程</li>
+                <li class="选项2">精细化工</li>
+            </ul>
+            <ul class="hide" data-type="42">
+                <li class="选项2">地质工程</li>
+                <li class="选项2">勘查技术与工程</li>
+                <li class="选项2">资源勘查工程</li>
+                <li class="选项2">地下水科学与工程</li>
+                <li class="选项2">旅游地学与规划工程</li>
+            </ul>
+            <ul class="hide" data-type="43">
+                <li class="选项2">采矿工程</li>
+                <li class="选项2">石油工程</li>
+                <li class="选项2">矿物加工工程</li>
+                <li class="选项2">油气储运工程</li>
+                <li class="选项2">矿物资源工程</li>
+                <li class="选项2">海洋油气工程</li>
+            </ul>
+            <ul class="hide" data-type="44">
+                <li class="选项2">农学</li>
+                <li class="选项2">园艺</li>
+                <li class="选项2">植物保护</li>
+                <li class="选项2">植物科学与技术</li>
+                <li class="选项2">种子科学与工程</li>
+                <li class="选项2">设施农业科学与工程</li>
+                <li class="选项2">茶学</li>
+                <li class="选项2">烟草</li>
+                <li class="选项2">应用生物科学</li>
+                <li class="选项2">农艺教育</li>
+                <li class="选项2">园艺教育</li>
+                <li class="选项2">智慧农业</li>
+                <li class="选项2">菌物科学与工程</li>
+                <li class="选项2">农药化肥</li>
+            </ul>
+            <ul class="hide" data-type="45">
+                <li class="选项2">农业资源与环境</li>
+                <li class="选项2" style="width: 270px">野生动物与自然保护区管理</li>
+                <li class="选项2">水土保持与荒漠化防治</li>
+                <li class="选项2">生物质科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="46">
+                <li class="选项2">动物科学</li>
+                <li class="选项2">蚕学</li>
+                <li class="选项2">蜂学</li>
+                <li class="选项2">经济动物学</li>
+                <li class="选项2">马业科学</li>
+            </ul>
+            <ul class="hide" data-type="47">
+                <li class="选项2">动物医学</li>
+                <li class="选项2">动物药学</li>
+                <li class="选项2">动植物检疫</li>
+                <li class="选项2">实验动物学</li>
+                <li class="选项2">中兽医学</li>
+            </ul>
+            <ul class="hide" data-type="48">
+                <li class="选项2">林学</li>
+                <li class="选项2">园林</li>
+                <li class="选项2">森林保护</li>
+                <li class="选项2">经济林</li>
+            </ul>
+            <ul class="hide" data-type="49">
+                <li class="选项2">水产养殖学</li>
+                <li class="选项2">海洋渔业科学与技术</li>
+                <li class="选项2">水族科学与技术</li>
+                <li class="选项2">水生动物医学</li>
+            </ul>
+            <ul class="hide" data-type="50">
+                <li class="选项2">草业科学</li>
+                <li class="选项2">草坪科学与工程</li>
+            </ul>
+            <ul class="hide" data-type="51">
+                <li class="选项2">基础医学</li>
+                <li class="选项2">生物医学</li>
+                <li class="选项2">生物医学科学</li>
+            </ul>
+            <ul class="hide" data-type="52">
+                <li class="选项2">临床医学</li>
+                <li class="选项2">麻醉学</li>
+                <li class="选项2">医学影像学</li>
+                <li class="选项2">眼视光医学</li>
+                <li class="选项2">精神医学</li>
+                <li class="选项2">放射医学</li>
+                <li class="选项2">儿科学</li>
+            </ul>
+            <ul class="hide" data-type="53">
+                <li class="选项2">口腔医学</li>
+            </ul>
+            <ul class="hide" data-type="54">
+                <li class="选项2">预防医学</li>
+                <li class="选项2">食品卫生与营养学</li>
+                <li class="选项2">妇幼保健医学</li>
+                <li class="选项2">卫生监督</li>
+                <li class="选项2">全球健康学</li>
+
+            </ul>
+            <ul class="hide" data-type="55">
+                <li class="选项2">中医学</li>
+                <li class="选项2">针灸推拿学</li>
+                <li class="选项2">藏医学</li>
+                <li class="选项2">蒙医学</li>
+                <li class="选项2">维医学</li>
+                <li class="选项2">壮医学</li>
+                <li class="选项2">哈医学</li>
+                <li class="选项2">傣医学</li>
+                <li class="选项2">回医学</li>
+                <li class="选项2">中医康复学</li>
+                <li class="选项2">中医养生学</li>
+                <li class="选项2">中医儿科学</li>
+                <li class="选项2">中医骨伤科学</li>
+            </ul>
+            <ul class="hide" data-type="56">
+                <li class="选项2">中西医临床医学</li>
+            </ul>
+            <ul class="hide" data-type="57">
+                <li class="选项2">药学</li>
+                <li class="选项2">药物制剂</li>
+                <li class="选项2">临床药学</li>
+                <li class="选项2">药事管理</li>
+                <li class="选项2">药物分析</li>
+                <li class="选项2">药物化学</li>
+                <li class="选项2">海洋药学</li>
+                <li class="选项2">化妆品科学与技术</li>
+            </ul>
+            <ul class="hide" data-type="58">
+                <li class="选项2">中药学</li>
+                <li class="选项2">重要资源与开发</li>
+                <li class="选项2">藏药学</li>
+                <li class="选项2">蒙药学</li>
+                <li class="选项2">中药制药</li>
+                <li class="选项2">中草药栽培与鉴定</li>
+            </ul>
+            <ul class="hide" data-type="59">
+                <li class="选项2">法医学</li>
+            </ul>
+            <ul class="hide" data-type="60">
+                <li class="选项2">医学检验技术</li>
+                <li class="选项2">医学实验技术</li>
+                <li class="选项2">医学影像技术</li>
+                <li class="选项2">眼视光学</li>
+                <li class="选项2">康复治疗学</li>
+                <li class="选项2">口腔医学技术</li>
+                <li class="选项2">卫生检验与检疫</li>
+                <li class="选项2">听力与言语康复学</li>
+                <li class="选项2">康复物理治疗</li>
+                <li class="选项2">康复作业治疗</li>
+                <li class="选项2">智能医学工程</li>
+            </ul>
+            <ul class="hide" data-type="61">
+                <li class="选项2">护理学</li>
+                <li class="选项2">助产学</li>
+            </ul>
+            <ul class="hide" data-type="62">
+                <li class="选项2">管理科学</li>
+                <li class="选项2">信息管理与信息系统</li>
+                <li class="选项2">工程管理</li>
+                <li class="选项2">房地产开发与管理</li>
+                <li class="选项2">工程造价</li>
+                <li class="选项2">保密管理</li>
+                <li class="选项2">邮政管理</li>
+                <li class="选项2">大数据管理与应用</li>
+                <li class="选项2">工程审计</li>
+                <li class="选项2">计算金融</li>
+                <li class="选项2">应急管理</li>
+            </ul>
+            <ul class="hide" data-type="63">
+                <li class="选项2">工商管理</li>
+                <li class="选项2">市场营销</li>
+                <li class="选项2">会计学</li>
+                <li class="选项2">财务管理</li>
+                <li class="选项2">国际商务</li>
+                <li class="选项2">人力资源管理</li>
+                <li class="选项2">审计学</li>
+                <li class="选项2">资产评估</li>
+                <li class="选项2">物业管理</li>
+                <li class="选项2">文化产业管理</li>
+                <li class="选项2">劳动关系</li>
+                <li class="选项2">体育经济与管理</li>
+                <li class="选项2">财务会计教育</li>
+                <li class="选项2">市场营销教育</li>
+                <li class="选项2">零售业管理</li>
+
+            </ul>
+            <ul class="hide" data-type="64">
+                <li class="选项2">农林经济管理</li>
+                <li class="选项2">农村区域发展</li>
+            </ul>
+            <ul class="hide" data-type="65">
+                <li class="选项2">公共事业管理</li>
+                <li class="选项2">行政管理</li>
+                <li class="选项2">劳动与社会保障</li>
+                <li class="选项2">土地资源管理</li>
+                <li class="选项2">城市管理</li>
+                <li class="选项2">海关管理</li>
+                <li class="选项2">交通管理</li>
+                <li class="选项2">海事管理</li>
+                <li class="选项2">公共关系学</li>
+                <li class="选项2">健康服务与管理</li>
+                <li class="选项2">海警后勤管理</li>
+                <li class="选项2">医疗产品管理</li>
+                <li class="选项2">医疗保险</li>
+                <li class="选项2">养老服务管理</li>
+            </ul>
+            <ul class="hide" data-type="66">
+                <li class="选项2">图书馆学</li>
+                <li class="选项2">档案学</li>
+                <li class="选项2">信息资源管理</li>
+            </ul>
+            <ul class="hide" data-type="67">
+                <li class="选项2">物流管理</li>
+                <li class="选项2">物流工程</li>
+                <li class="选项2">采购管理</li>
+                <li class="选项2">供应链管理</li>
+            </ul>
+            <ul class="hide" data-type="68">
+                <li class="选项2">工业工程</li>
+                <li class="选项2">标准化工程</li>
+                <li class="选项2">质量管理工程</li>
+            </ul>
+            <ul class="hide" data-type="69">
+                <li class="选项2">电子商务</li>
+                <li class="选项2">电子商务及法律</li>
+                <li class="选项2">跨境电子商务</li>
+            </ul>
+            <ul class="hide" data-type="70">
+                <li class="选项2">旅游管理</li>
+                <li class="选项2">酒店管理</li>
+                <li class="选项2">会展经济与管理</li>
+                <li class="选项2">旅游管理与服务教育</li>
+            </ul>
+            <ul class="hide" data-type="71">
+                <li class="选项2">艺术史论</li>
+                <li class="选项2">艺术管理</li>
+            </ul>
+            <ul class="hide" data-type="72">
+                <li class="选项2">音乐表演</li>
+                <li class="选项2">音乐学</li>
+                <li class="选项2">作曲与作曲技术理论</li>
+                <li class="选项2">舞蹈表演</li>
+                <li class="选项2">舞蹈学</li>
+                <li class="选项2">舞蹈编导</li>
+                <li class="选项2">舞蹈教育</li>
+                <li class="选项2">航空服务艺术与管理</li>
+                <li class="选项2">流行音乐</li>
+                <li class="选项2">音乐治疗</li>
+                <li class="选项2">流行舞蹈</li>
+            </ul>
+            <ul class="hide" data-type="73">
+                <li class="选项2">表演</li>
+                <li class="选项2">戏剧学</li>
+                <li class="选项2">电影学</li>
+                <li class="选项2">戏剧影视文学</li>
+                <li class="选项2">广播电视编导</li>
+                <li class="选项2">戏剧影视导演</li>
+                <li class="选项2">戏剧影视美术设计</li>
+                <li class="选项2">录音艺术</li>
+                <li class="选项2">播音与主持艺术</li>
+                <li class="选项2">动画</li>
+                <li class="选项2">影视摄影与制作</li>
+                <li class="选项2">影视技术</li>
+                <li class="选项2">戏剧教育</li>
+            </ul>
+            <ul class="hide" data-type="74">
+                <li class="选项2">美术学</li>
+                <li class="选项2">绘画</li>
+                <li class="选项2">雕塑</li>
+                <li class="选项2">摄影</li>
+                <li class="选项2">书法学</li>
+                <li class="选项2">中国画</li>
+                <li class="选项2">实验艺术</li>
+                <li class="选项2">跨媒体艺术</li>
+                <li class="选项2">文物保护与修复</li>
+                <li class="选项2">漫画</li>
+            </ul>
+            <ul class="hide" data-type="75">
+                <li class="选项2">艺术设计学</li>
+                <li class="选项2">视觉传达设计</li>
+                <li class="选项2">环境设计</li>
+                <li class="选项2">产品设计</li>
+                <li class="选项2">服装与服饰设计</li>
+                <li class="选项2">公共艺术</li>
+                <li class="选项2">工艺美术</li>
+                <li class="选项2">数字媒体艺术</li>
+                <li class="选项2">艺术与科技</li>
+                <li class="选项2">陶瓷艺术设计</li>
+                <li class="选项2">新媒体艺术</li>
+                <li class="选项2">包装设计</li>
+            </ul>
+        </div>
+        <div class="专业代码" style="height: 800px">
+            <div class="标题4">专业代码</div>
+            <ul class="hide" data-type="0">
+                <li class="选项4">010101</li>
+                <li class="选项4">010102</li>
+                <li class="选项4">010103</li>
+                <li class="选项4">010104</li>
+            </ul>
+            <ul class="hide" data-type="1">
+                <li class="选项4">020101</li>
+                <li class="选项4">020102</li>
+                <li class="选项4">020103</li>
+                <li class="选项4">020104</li>
+                <li class="选项4">020105</li>
+                <li class="选项4">020106</li>
+                <li class="选项4">020107</li>
+                <li class="选项4">020108</li>
+                <li class="选项4">020109</li>
+            </ul>
+            <ul class="hide" data-type="2">
+                <li class="选项4">020201</li>
+                <li class="选项4">020202</li>
+            </ul>
+            <ul class="hide" data-type="3">
+                <li class="选项4">020301</li>
+                <li class="选项4">020302</li>
+                <li class="选项4">020303</li>
+                <li class="选项4">020304</li>
+                <li class="选项4">020305</li>
+                <li class="选项4">020306</li>
+                <li class="选项4">020307</li>
+                <li class="选项4">020308</li>
+                <li class="选项4">020309</li>
+                <li class="选项4">020310</li>
+            </ul>
+            <ul class="hide" data-type="4">
+                <li class="选项4">020401</li>
+                <li class="选项4">020402</li>
+            </ul>
+            <ul class="hide" data-type="5">
+                <li class="选项4">030101</li>
+                <li class="选项4">030102</li>
+                <li class="选项4">030103</li>
+                <li class="选项4">030104</li>
+                <li class="选项4">030105</li>
+                <li class="选项4">030106</li>
+                <li class="选项4">030107</li>
+            </ul>
+            <ul class="hide" data-type="6">
+                <li class="选项4">030201</li>
+                <li class="选项4">030202</li>
+                <li class="选项4">030203</li>
+                <li class="选项4">030204</li>
+                <li class="选项4">030205</li>
+                <li class="选项4">030206</li>
+            </ul>
+            <ul class="hide" data-type="7">
+                <li class="选项4">030301</li>
+                <li class="选项4">030302</li>
+                <li class="选项4">030303</li>
+                <li class="选项4">030304</li>
+                <li class="选项4">030305</li>
+                <li class="选项4">030306</li>
+            </ul>
+            <ul class="hide" data-type="8">
+                <li class="选项4">030401</li>
+            </ul>
+            <ul class="hide" data-type="9">
+                <li class="选项4">030501</li>
+                <li class="选项4">030502</li>
+                <li class="选项4">030503</li>
+                <li class="选项4">030504</li>
+            </ul>
+            <ul class="hide" data-type="10">
+                <li class="选项4">030601</li>
+                <li class="选项4">030602</li>
+                <li class="选项4">030603</li>
+                <li class="选项4">030604</li>
+                <li class="选项4">030605</li>
+                <li class="选项4">030606</li>
+                <li class="选项4">030607</li>
+                <li class="选项4">030608</li>
+                <li class="选项4">030609</li>
+                <li class="选项4">030610</li>
+                <li class="选项4">030611</li>
+                <li class="选项4">030612</li>
+                <li class="选项4">030613</li>
+                <li class="选项4">030614</li>
+                <li class="选项4">030615</li>
+            </ul>
+            <ul class="hide" data-type="11">
+                <li class="选项4">040101</li>
+                <li class="选项4">040102</li>
+                <li class="选项4">040103</li>
+                <li class="选项4">040104</li>
+                <li class="选项4">040105</li>
+                <li class="选项4">040106</li>
+                <li class="选项4">040107</li>
+                <li class="选项4">040108</li>
+                <li class="选项4">040109</li>
+                <li class="选项4">040110</li>
+                <li class="选项4">040111</li>
+                <li class="选项4">040112</li>
+            </ul>
+            <ul class="hide" data-type="12">
+                <li class="选项4">040201</li>
+                <li class="选项4">040202</li>
+                <li class="选项4">040203</li>
+                <li class="选项4">040204</li>
+                <li class="选项4">040205</li>
+                <li class="选项4">040206</li>
+                <li class="选项4">040207</li>
+                <li class="选项4">040208</li>
+                <li class="选项4">040209</li>
+                <li class="选项4">040210</li>
+                <li class="选项4">040211</li>
+                <li class="选项4">040212</li>
+                <li class="选项4">040213</li>
+            </ul>
+            <ul class="hide" data-type="13">
+                <li class="选项4">050101</li>
+                <li class="选项4">050102</li>
+                <li class="选项4">050103</li>
+                <li class="选项4">050104</li>
+                <li class="选项4">050105</li>
+                <li class="选项4">050106</li>
+                <li class="选项4">050107</li>
+                <li class="选项4">050108</li>
+                <li class="选项4">020109</li>
+            </ul>
+            <ul class="hide" data-type="14">
+                <li class="选项4">050201</li>
+                <li class="选项4">050202</li>
+                <li class="选项4">050203</li>
+                <li class="选项4">050204</li>
+                <li class="选项4">050205</li>
+                <li class="选项4">050206</li>
+                <li class="选项4">050207</li>
+                <li class="选项4">050208</li>
+                <li class="选项4">050209</li>
+                <li class="选项4">050210</li>
+                <li class="选项4">050211</li>
+                <li class="选项4">050212</li>
+                <li class="选项4">050213</li>
+                <li class="选项4">050214</li>
+                <li class="选项4">050215</li>
+            </ul>
+            <ul class="hide" data-type="15">
+                <li class="选项4">050301</li>
+                <li class="选项4">050302</li>
+                <li class="选项4">050303</li>
+                <li class="选项4">050304</li>
+                <li class="选项4">050305</li>
+                <li class="选项4">050306</li>
+                <li class="选项4">050307</li>
+                <li class="选项4">050308</li>
+                <li class="选项4">050309</li>
+            </ul>
+            <ul class="hide" data-type="16">
+                <li class="选项4">060101</li>
+                <li class="选项4">060102</li>
+                <li class="选项4">060103</li>
+                <li class="选项4">060104</li>
+                <li class="选项4">060105</li>
+                <li class="选项4">060106</li>
+                <li class="选项4">060107</li>
+            </ul>
+            <ul class="hide" data-type="17">
+                <li class="选项4">070101</li>
+                <li class="选项4">070102</li>
+                <li class="选项4">070103</li>
+                <li class="选项4">070104</li>
+            </ul>
+            <ul class="hide" data-type="18">
+                <li class="选项4">070201</li>
+                <li class="选项4">070202</li>
+                <li class="选项4">070203</li>
+                <li class="选项4">070204</li>
+                <li class="选项4">070205</li>
+            </ul>
+            <ul class="hide" data-type="19">
+                <li class="选项4">070301</li>
+                <li class="选项4">070302</li>
+                <li class="选项4">070303</li>
+                <li class="选项4">070304</li>
+                <li class="选项4">070305</li>
+            </ul>
+            <ul class="hide" data-type="20">
+                <li class="选项4">070401</li>
+            </ul>
+            <ul class="hide" data-type="21">
+                <li class="选项4">070501</li>
+                <li class="选项4">070502</li>
+                <li class="选项4">070503</li>
+                <li class="选项4">070504</li>
+            </ul>
+            <ul class="hide" data-type="22">
+                <li class="选项4">070601</li>
+                <li class="选项4">070602</li>
+            </ul>
+            <ul class="hide" data-type="23">
+                <li class="选项4">070701</li>
+                <li class="选项4">070702</li>
+                <li class="选项4">070703</li>
+                <li class="选项4">070704</li>
+            </ul>
+            <ul class="hide" data-type="24">
+                <li class="选项4">070801</li>
+                <li class="选项4">070802</li>
+                <li class="选项4">070803</li>
+            </ul>
+            <ul class="hide" data-type="25">
+                <li class="选项4">070901</li>
+                <li class="选项4">070902</li>
+                <li class="选项4">070903</li>
+                <li class="选项4">070904</li>
+            </ul>
+            <ul class="hide" data-type="26">
+                <li class="选项4">071001</li>
+                <li class="选项4">071002</li>
+                <li class="选项4">071003</li>
+                <li class="选项4">071004</li>
+                <li class="选项4">071005</li>
+                <li class="选项4">071006</li>
+            </ul>
+            <ul class="hide" data-type="27">
+                <li class="选项4">071101</li>
+                <li class="选项4">071102</li>
+            </ul>
+            <ul class="hide" data-type="28">
+                <li class="选项4">071201</li>
+                <li class="选项4">071202</li>
+            </ul>
+            <ul class="hide" data-type="29">
+                <li class="选项4">080101</li>
+                <li class="选项4">080102</li>
+            </ul>
+            <ul class="hide" data-type="30">
+                <li class="选项4">080201</li>
+                <li class="选项4">080202</li>
+                <li class="选项4">080203</li>
+                <li class="选项4">080204</li>
+                <li class="选项4">080205</li>
+                <li class="选项4">080206</li>
+                <li class="选项4">080207</li>
+                <li class="选项4">080208</li>
+                <li class="选项4">080209</li>
+                <li class="选项4">080210</li>
+                <li class="选项4">080211</li>
+                <li class="选项4">080212</li>
+                <li class="选项4">080213</li>
+                <li class="选项4">080214</li>
+                <li class="选项4">080215</li>
+            </ul>
+            <ul class="hide" data-type="31">
+                <li class="选项4">080301</li>
+                <li class="选项4">080302</li>
+                <li class="选项4">080303</li>
+            </ul>
+            <ul class="hide" data-type="32">
+                <li class="选项4">080401</li>
+                <li class="选项4">080402</li>
+                <li class="选项4">080403</li>
+                <li class="选项4">080404</li>
+                <li class="选项4">080405</li>
+                <li class="选项4">080406</li>
+                <li class="选项4">080407</li>
+                <li class="选项4">080408</li>
+                <li class="选项4">080409</li>
+                <li class="选项4">080410</li>
+                <li class="选项4">080411</li>
+                <li class="选项4">080412</li>
+                <li class="选项4">080413</li>
+                <li class="选项4">080414</li>
+                <li class="选项4">080415</li>
+            </ul>
+            <ul class="hide" data-type="33">
+                <li class="选项4">080501</li>
+                <li class="选项4">080502</li>
+                <li class="选项4">080503</li>
+                <li class="选项4">080504</li>
+            </ul>
+            <ul class="hide" data-type="34">
+                <li class="选项4">080601</li>
+                <li class="选项4">080602</li>
+                <li class="选项4">080603</li>
+                <li class="选项4">080604</li>
+                <li class="选项4">080605</li>
+                <li class="选项4">080606</li>
+            </ul>
+            <ul class="hide" data-type="35">
+                <li class="选项4">080701</li>
+                <li class="选项4">080702</li>
+                <li class="选项4">080703</li>
+                <li class="选项4">080704</li>
+                <li class="选项4">080705</li>
+                <li class="选项4">080706</li>
+                <li class="选项4">080707</li>
+                <li class="选项4">080708</li>
+                <li class="选项4">080709</li>
+                <li class="选项4">080710</li>
+                <li class="选项4">080711</li>
+                <li class="选项4">080712</li>
+                <li class="选项4">080713</li>
+                <li class="选项4">080714</li>
+                <li class="选项4">080715</li>
+            </ul>
+            <ul class="hide" data-type="36">
+                <li class="选项4">080801</li>
+                <li class="选项4">080802</li>
+                <li class="选项4">080803</li>
+                <li class="选项4">080804</li>
+                <li class="选项4">080805</li>
+                <li class="选项4">080806</li>
+                <li class="选项4">080107</li>
+            </ul>
+            <ul class="hide" data-type="37">
+                <li class="选项4">080901</li>
+                <li class="选项4">080902</li>
+                <li class="选项4">080903</li>
+                <li class="选项4">080904</li>
+                <li class="选项4">080905</li>
+                <li class="选项4">080906</li>
+                <li class="选项4">080907</li>
+                <li class="选项4">080908</li>
+                <li class="选项4">080909</li>
+                <li class="选项4">080910</li>
+                <li class="选项4">080911</li>
+                <li class="选项4">080912</li>
+                <li class="选项4">080913</li>
+                <li class="选项4">080914</li>
+                <li class="选项4">080915</li>
+            </ul>
+            <ul class="hide" data-type="38">
+                <li class="选项4">081001</li>
+                <li class="选项4">081002</li>
+                <li class="选项4">081003</li>
+                <li class="选项4">081004</li>
+                <li class="选项4">081005</li>
+                <li class="选项4">081006</li>
+                <li class="选项4">081007</li>
+                <li class="选项4">081008</li>
+                <li class="选项4">081009</li>
+                <li class="选项4">081010</li>
+            </ul>
+            <ul class="hide" data-type="39">
+                <li class="选项4">081101</li>
+                <li class="选项4">081102</li>
+                <li class="选项4">081103</li>
+                <li class="选项4">081104</li>
+                <li class="选项4">081105</li>
+            </ul>
+            <ul class="hide" data-type="40">
+                <li class="选项4">081201</li>
+                <li class="选项4">081202</li>
+                <li class="选项4">081203</li>
+                <li class="选项4">081204</li>
+                <li class="选项4">081205</li>
+            </ul>
+            <ul class="hide" data-type="41">
+                <li class="选项4">081301</li>
+                <li class="选项4">081302</li>
+                <li class="选项4">081303</li>
+                <li class="选项4">081304</li>
+                <li class="选项4">081305</li>
+                <li class="选项4">081306</li>
+                <li class="选项4">081307</li>
+                <li class="选项4">081308</li>
+            </ul>
+            <ul class="hide" data-type="42">
+                <li class="选项4">081401</li>
+                <li class="选项4">081402</li>
+                <li class="选项4">081403</li>
+                <li class="选项4">081404</li>
+                <li class="选项4">081405</li>
+            </ul>
+            <ul class="hide" data-type="43">
+                <li class="选项4">081501</li>
+                <li class="选项4">081502</li>
+                <li class="选项4">081503</li>
+                <li class="选项4">081504</li>
+                <li class="选项4">081505</li>
+                <li class="选项4">081506</li>
+            </ul>
+            <ul class="hide" data-type="44">
+                <li class="选项4">090101</li>
+                <li class="选项4">090102</li>
+                <li class="选项4">090103</li>
+                <li class="选项4">090104</li>
+                <li class="选项4">090105</li>
+                <li class="选项4">090106</li>
+                <li class="选项4">090107</li>
+                <li class="选项4">090108</li>
+                <li class="选项4">090109</li>
+                <li class="选项4">090110</li>
+                <li class="选项4">090111</li>
+                <li class="选项4">090112</li>
+                <li class="选项4">090113</li>
+                <li class="选项4">090114</li>
+            </ul>
+            <ul class="hide" data-type="45">
+                <li class="选项4">090201</li>
+                <li class="选项4">090202</li>
+                <li class="选项4">090203</li>
+                <li class="选项4">090204</li>
+            </ul>
+            <ul class="hide" data-type="46">
+                <li class="选项4">090301</li>
+                <li class="选项4">090302</li>
+                <li class="选项4">090303</li>
+                <li class="选项4">090304</li>
+                <li class="选项4">090305</li>
+            </ul>
+            <ul class="hide" data-type="47">
+                <li class="选项4">090401</li>
+                <li class="选项4">090402</li>
+                <li class="选项4">090403</li>
+                <li class="选项4">090404</li>
+                <li class="选项4">090405</li>
+            </ul>
+            <ul class="hide" data-type="48">
+                <li class="选项4">090501</li>
+                <li class="选项4">090502</li>
+                <li class="选项4">090503</li>
+                <li class="选项4">090504</li>
+            </ul>
+            <ul class="hide" data-type="49">
+                <li class="选项4">090601</li>
+                <li class="选项4">090602</li>
+                <li class="选项4">090603</li>
+                <li class="选项4">090604</li>
+            </ul>
+            <ul class="hide" data-type="50">
+                <li class="选项4">090701</li>
+                <li class="选项4">090702</li>
+            </ul>
+            <ul class="hide" data-type="51">
+                <li class="选项4">100101</li>
+                <li class="选项4">100102</li>
+                <li class="选项4">100103</li>
+            </ul>
+            <ul class="hide" data-type="52">
+                <li class="选项4">100201</li>
+                <li class="选项4">100202</li>
+                <li class="选项4">100203</li>
+                <li class="选项4">100204</li>
+                <li class="选项4">100205</li>
+                <li class="选项4">100206</li>
+                <li class="选项4">100207</li>
+            </ul>
+            <ul class="hide" data-type="53">
+                <li class="选项4">100301</li>
+            </ul>
+            <ul class="hide" data-type="54">
+                <li class="选项4">100401</li>
+                <li class="选项4">100402</li>
+                <li class="选项4">100403</li>
+                <li class="选项4">100404</li>
+                <li class="选项4">100405</li>
+            </ul>
+            <ul class="hide" data-type="55">
+                <li class="选项4">100501</li>
+                <li class="选项4">100502</li>
+                <li class="选项4">100503</li>
+                <li class="选项4">100504</li>
+                <li class="选项4">100505</li>
+                <li class="选项4">100506</li>
+                <li class="选项4">100507</li>
+                <li class="选项4">100508</li>
+                <li class="选项4">100509</li>
+                <li class="选项4">100510</li>
+                <li class="选项4">100511</li>
+                <li class="选项4">100512</li>
+                <li class="选项4">100513</li>
+            </ul>
+            <ul class="hide" data-type="56">
+                <li class="选项4">100601</li>
+            </ul>
+            <ul class="hide" data-type="57">
+                <li class="选项4">100701</li>
+                <li class="选项4">100702</li>
+                <li class="选项4">100703</li>
+                <li class="选项4">100704</li>
+                <li class="选项4">100705</li>
+                <li class="选项4">100706</li>
+                <li class="选项4">100707</li>
+                <li class="选项4">100708</li>
+            </ul>
+            <ul class="hide" data-type="58">
+                <li class="选项4">100801</li>
+                <li class="选项4">100802</li>
+                <li class="选项4">100803</li>
+                <li class="选项4">100804</li>
+                <li class="选项4">100805</li>
+                <li class="选项4">100806</li>
+            </ul>
+            <ul class="hide" data-type="59">
+                <li class="选项4">100901</li>
+            </ul>
+            <ul class="hide" data-type="60">
+                <li class="选项4">101001</li>
+                <li class="选项4">101002</li>
+                <li class="选项4">101003</li>
+                <li class="选项4">101004</li>
+                <li class="选项4">101005</li>
+                <li class="选项4">101006</li>
+                <li class="选项4">101007</li>
+                <li class="选项4">101008</li>
+                <li class="选项4">101009</li>
+                <li class="选项4">101010</li>
+                <li class="选项4">101011</li>
+            </ul>
+            <ul class="hide" data-type="61">
+                <li class="选项4">101101</li>
+                <li class="选项4">101102</li>
+            </ul>
+            <ul class="hide" data-type="62">
+                <li class="选项4">120101</li>
+                <li class="选项4">120102</li>
+                <li class="选项4">120103</li>
+                <li class="选项4">120104</li>
+                <li class="选项4">120105</li>
+                <li class="选项4">120106</li>
+                <li class="选项4">120107</li>
+                <li class="选项4">120108</li>
+                <li class="选项4">120109</li>
+                <li class="选项4">120110</li>
+                <li class="选项4">120111</li>
+            </ul>
+            <ul class="hide" data-type="63">
+                <li class="选项4">120201</li>
+                <li class="选项4">120202</li>
+                <li class="选项4">120203</li>
+                <li class="选项4">120204</li>
+                <li class="选项4">120205</li>
+                <li class="选项4">120206</li>
+                <li class="选项4">120207</li>
+                <li class="选项4">120208</li>
+                <li class="选项4">120209</li>
+                <li class="选项4">120210</li>
+                <li class="选项4">120211</li>
+                <li class="选项4">120212</li>
+                <li class="选项4">120213</li>
+                <li class="选项4">120214</li>
+                <li class="选项4">120215</li>
+            </ul>
+            <ul class="hide" data-type="64">
+                <li class="选项4">120301</li>
+                <li class="选项4">120302</li>
+            </ul>
+            <ul class="hide" data-type="65">
+                <li class="选项4">120401</li>
+                <li class="选项4">120402</li>
+                <li class="选项4">120403</li>
+                <li class="选项4">120404</li>
+                <li class="选项4">120405</li>
+                <li class="选项4">120406</li>
+                <li class="选项4">120407</li>
+                <li class="选项4">120408</li>
+                <li class="选项4">120409</li>
+                <li class="选项4">120410</li>
+                <li class="选项4">120411</li>
+                <li class="选项4">120412</li>
+                <li class="选项4">120413</li>
+                <li class="选项4">120414</li>
+            </ul>
+            <ul class="hide" data-type="66">
+                <li class="选项4">120501</li>
+                <li class="选项4">120502</li>
+                <li class="选项4">120503</li>
+            </ul>
+            <ul class="hide" data-type="67">
+                <li class="选项4">120601</li>
+                <li class="选项4">120602</li>
+                <li class="选项4">120603</li>
+                <li class="选项4">120604</li>
+            </ul>
+            <ul class="hide" data-type="68">
+                <li class="选项4">120701</li>
+                <li class="选项4">120702</li>
+                <li class="选项4">120703</li>
+            </ul>
+            <ul class="hide" data-type="69">
+                <li class="选项4">120801</li>
+                <li class="选项4">120802</li>
+                <li class="选项4">120803</li>
+            </ul>
+            <ul class="hide" data-type="70">
+                <li class="选项4">120901</li>
+                <li class="选项4">120902</li>
+                <li class="选项4">120903</li>
+                <li class="选项4">120904</li>
+            </ul>
+            <ul class="hide" data-type="71">
+                <li class="选项4">130101</li>
+                <li class="选项4">130102</li>
+            </ul>
+            <ul class="hide" data-type="72">
+                <li class="选项4">130201</li>
+                <li class="选项4">130202</li>
+                <li class="选项4">130203</li>
+                <li class="选项4">130204</li>
+                <li class="选项4">130205</li>
+                <li class="选项4">130206</li>
+                <li class="选项4">130207</li>
+                <li class="选项4">130208</li>
+                <li class="选项4">130209</li>
+                <li class="选项4">130210</li>
+                <li class="选项4">130211</li>
+            </ul>
+            <ul class="hide" data-type="73">
+                <li class="选项4">130301</li>
+                <li class="选项4">130302</li>
+                <li class="选项4">130303</li>
+                <li class="选项4">130304</li>
+                <li class="选项4">130305</li>
+                <li class="选项4">130306</li>
+                <li class="选项4">130307</li>
+                <li class="选项4">130308</li>
+                <li class="选项4">120409</li>
+                <li class="选项4">130310</li>
+                <li class="选项4">130311</li>
+                <li class="选项4">130312</li>
+                <li class="选项4">130313</li>
+            </ul>
+            <ul class="hide" data-type="74">
+                <li class="选项4">130401</li>
+                <li class="选项4">130402</li>
+                <li class="选项4">130403</li>
+                <li class="选项4">130404</li>
+                <li class="选项4">130405</li>
+                <li class="选项4">130406</li>
+                <li class="选项4">130407</li>
+                <li class="选项4">130408</li>
+                <li class="选项4">130409</li>
+                <li class="选项4">130410</li>
+            </ul>
+            <ul class="hide" data-type="75">
+                <li class="选项4">130501</li>
+                <li class="选项4">130502</li>
+                <li class="选项4">130503</li>
+                <li class="选项4">130504</li>
+                <li class="选项4">130505</li>
+                <li class="选项4">130506</li>
+                <li class="选项4">130507</li>
+                <li class="选项4">130508</li>
+                <li class="选项4">130509</li>
+                <li class="选项4">130510</li>
+                <li class="选项4">130511</li>
+                <li class="选项4">130512</li>
+            </ul>
+        </div>
+        <div class="开设院校" style="height: 800px">
+            <div class="标题5">热门高校</div>
+            <ul class="hide" data-type="0">
+                <a href="子文件/哲学/哲学类/哲学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/哲学/哲学类/逻辑学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/哲学/哲学类/宗教学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/哲学/哲学类/伦理学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="1">
+                <a href="子文件/经济学/经济学类/经济学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/经济统计学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/国民经济管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/资源与环境经济学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/商务经济学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/能源经济.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/劳动经济学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/经济工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济学类/数字经济.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="2">
+                <a href="子文件/经济学/财政学类/财政学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/财政学类/税收学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="3">
+                <a href="子文件/经济学/金融学类/金融学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/金融工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/保险学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/投资学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/金融数学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/信用管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/经济与金融.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/精算学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/互联网金融.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/金融学类/金融科技.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="4">
+                <a href="子文件/经济学/经济与贸易类/国际经济与贸易.html"><li class="选项2">查看</li></a>
+                <a href="子文件/经济学/经济与贸易类/贸易经济.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="5">
+                <a href="子文件/法学/法学类/法学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/知识产权.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/监狱学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/信用风险管理与法律防控.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/国际经贸规则.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/司法警察学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/法学类/社区矫正.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="6">
+                <a href="子文件/法学/政治学类/政治学与行政学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/政治学类/国际政治.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/政治学类/外交学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/政治学类/国际事务与国际关系.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/政治学类/政治学、经济学与哲学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/政治学类/国际组织与全球治理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="7">
+                <a href="子文件/法学/社会学类/社会学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/社会学类/社会工作.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/社会学类/人类学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/社会学类/女性学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/社会学类/家政学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/社会学类/老年学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="8">
+                <a href="子文件/法学/民族学类/民族学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="9">
+                <a href="子文件/法学/马克思主义理论类/科学社会主义.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/马克思主义理论类/中国共产党历史.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/马克思主义理论类/思想政治教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/马克思主义理论类/马克思主义理论.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="10">
+                <a href="子文件/法学/公安学类/治安学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/侦查学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/边防管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/禁毒学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/警犬技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/经济犯罪侦察.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/边防指挥.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/消防指挥.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/警卫学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/公安情报学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/犯罪学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/公安管理学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/涉外警务.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/国内安全保卫.html"><li class="选项2">查看</li></a>
+                <a href="子文件/法学/公安学类/警务指挥与技术.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="11">
+                <a href="子文件/教育学/教育学类/教育学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/特殊教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/人文教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/教育技术学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/艺术教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/学前教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/小学教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/特殊教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/华文教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/教育康复学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/卫生教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/教育学类/认知科学与技术.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="12">
+                <a href="子文件/教育学/体育学类/体育教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/运动训练.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/社会体育指导与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/武术与民族传统体育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/运动人体科学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/运动康复.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/休闲体育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/体能训练.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/冰雪运动.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/电子竞技运动与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/智能体育工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/体育旅游.html"><li class="选项2">查看</li></a>
+                <a href="子文件/教育学/体育学类/运动能力开发.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="13">
+                <a href="子文件/文学/中国语言文字类/汉语言文学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/汉语言.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/汉语国际教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/中国少数民族语言文学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/古典文献学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/应用语言学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/秘书学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/中国语言与文化.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/中国语言文字类/手语翻译.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="14">
+                <a href="子文件/文学/外国语言文学类/桑戈语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/英语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/俄语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/德语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/法语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/西班牙语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/阿拉伯语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/日语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/波斯语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/朝鲜语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/菲律宾语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/语言学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/塔玛齐格特语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/爪哇语.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/外国语言文学类/旁遮普语.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="15">
+                <a href="子文件/文学/新闻传播学类/新闻学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/广播电视学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/广告学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/传播学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/广告学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/传播学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/编辑出版学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/网络与新媒体.html"><li class="选项2">查看</li></a>
+                <a href="子文件/文学/新闻传播学类/国际新闻与传播.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="16">
+                <a href="子文件/历史学/历史学类/历史学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/世界史.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/考古学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/文物与博物馆学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/文物保护技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/外国语言与外国历史.html"><li class="选项2">查看</li></a>
+                <a href="子文件/历史学/历史学类/文化遗产.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="17">
+                <a href="子文件/理学/数学类/数学与应用数学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/数学类/信息与计算科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/数学类/数理基础科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/数学类/数据计算及应用/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="18">
+                <a href="子文件/理学/物理学类/物理学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/物理学类/应用物理学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/物理学类/核物理/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/物理学类/声学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/物理学类/系统科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="19">
+                <a href="子文件/理学/化学类/化学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/化学类/应用化学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/化学类/化学生物学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/化学类/分子科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/化学类/能源化学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="20">
+                <a href="子文件/理学/天文学类/天文学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="21">
+                <a href="子文件/理学/地理科学类/地理科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地理科学类/自然地理与资源环境/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地理科学类/人文地理与城乡规划/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地理科学类/地理信息科学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="22">
+                <a href="子文件/理学/大气科学类/大气科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/大气科学类/应用气象学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="23">
+                <a href="子文件/理学/海洋科学类/海洋科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/海洋科学类/海洋技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/海洋科学类/海洋资源与环境/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/海洋科学类/军事海洋学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="24">
+                <a href="子文件/理学/地球物理学类/地球物理学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地球物理学类/空间科学与技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地球物理学类/防灾减灾科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="25">
+                <a href="子文件/理学/地质学类/地质学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地质学类/地球化学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地质学类/地球信息科学与技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/地质学类/古生物学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="26">
+                <a href="子文件/理学/生物科学类/生物科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/生物科学类/生物技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/生物科学类/生物信息学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/生物科学类/生态学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/生物科学类/整合科学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/生物科学类/神经科学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="27">
+                <a href="子文件/理学/心理学类/心理学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/心理学类/应用心理学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="28">
+                <a href="子文件/理学/统计学类/统计学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/理学/统计学类/应用统计学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="29">
+                <a href="子文件/工学/力学类/理论与应用力学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/力学类/工程力学/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="30">
+                <a href="子文件/工学/机械类/机械工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/机械设计制造及其自动化/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/材料成型及控制工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/机械电子工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/工业设计/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/过程装备与控制工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/车辆工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/汽车服务工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/机械工艺技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/微机电程序工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/机电技术教育/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/汽车维修工程教育/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/智能制造工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/智能车辆工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/机械类/仿生科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="31">
+                <a href="子文件/工学/仪器类/测控技术与仪器/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/仪器类/精密仪器/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/仪器类/智能感知工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="32">
+                <a href="子文件/工学/材料类/材料科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/材料物理/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/材料化学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/冶金工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/金属材料工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/无机非金属材料工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/高分子材料与化工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/复合材料与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/粉体材料科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/宝石及材料工艺学/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/焊接技术与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/功能材料/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/纳米材料与技术/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/新能源材料与器件/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/材料类/复合材料与工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="33">
+                <a href="子文件/工学/能源动力类/能源与动力工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/能源动力类/能源与环境系统工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/能源动力类/新能源科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/能源动力类/储能科学与工程/开设院校.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="34">
+                <a href="子文件/工学/电气类/电气工程及其自动化/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电气类/智能电网信息工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电气类/光源与照明/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电气类/电气工程与智能控制/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电气类/电机电器智能化/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电气类/电缆工程/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="35">
+                <a href="子文件/工学/电子信息类/电子信息工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电子科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/通信工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/微电子科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/光电信息科学与工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/信息工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/广播电视工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/水声工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电子封装技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/集成电路设计与集成系统.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/医学信息工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电磁场与无线技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电波传播与天线.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电子信息科学与技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/电子信息类/电信工程及管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="36">
+                <a href="子文件/工学/自动化类/自动化/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/轨道交通信号与控制/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/机器人工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/邮政工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/核电技术与控制工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/智能装备与系统/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/自动化类/工业智能.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="37">
+                <a href="子文件/工学/计算机类/计算机科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/软件工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/网络工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/信息安全/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/物联网工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/数字媒体技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/智能科学与技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/空间信息与数字技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/电子与计算机工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/数据科学与大数据技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/网络空间安全.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/新媒体技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/电影制作.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/保密技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/计算机类/服务科学与工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="38">
+                <a href="子文件/工学/土木类/土木工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/建筑环境与能源应用工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/给排水科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/建筑电气与智能化/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/城市地下空间工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/道路桥梁与渡河工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/铁道工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/智能制造.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/土木、水利与海洋工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/土木类/土木、水利与交通工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="39">
+                <a href="子文件/工学/水利类/水利水电工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/水利类/水文与水资源工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/水利类/港口航道与海岸工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/水利类/水务工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/水利类/水利科学与工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="40">
+                <a href="子文件/工学/测绘学/测绘工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/测绘学/遥感科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/测绘学/导航工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/测绘学/地理国情监测/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/测绘学/地理空间信息工程/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="41">
+                <a href="子文件/工学/化工与制药学/化学工程与工艺/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/制药工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/资源循环科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/能源化学工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/化学工程与工业生物工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/化工安全工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/涂料工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/化工与制药学/精细化工/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="42">
+                <a href="子文件/工学/地质学/地质工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/地质学/勘查技术与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/地质学/资源勘查工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/地质学/地下水科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/地质学/旅游地学与规划工程/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="43">
+                <a href="子文件/工学/矿业学/采矿工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/矿业学/石油工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/矿业学/矿物加工工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/矿业学/油气储运工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/矿业学/矿物资源工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/工学/矿业学/海洋油气工程/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="44">
+                <a href="子文件/农学/植物生产类/农学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/园艺/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/植物保护/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/植物科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/种子科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/设施农业科学与工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/茶学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/烟草/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/应用生物科学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/农艺教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/园艺教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/智慧农业.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/菌物科学与工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/植物生产类/农药化肥.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="45">
+                <a href="子文件/农学/自然保护与环境生态类/农业资源与环境/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/自然保护与环境生态类/野生动物与自然保护区管理/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/自然保护与环境生态类/水土保持与荒漠化防治/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/自然保护与环境生态类/生物质科学与工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="46">
+                <a href="子文件/农学/动物生产类/动物科学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物生产类/蚕学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物生产类/蜂学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物生产类/经济动物学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物生产类/马业科学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="47">
+                <a href="子文件/农学/动物医学类/动物医学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物医学类/动物药学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物医学类/动植物检疫.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物医学类/实验动物学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/动物医学类/中兽医学/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="48">
+                <a href="子文件/农学/林学类/林学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/林学类/园林/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/林学类/森林保护/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/林学类/经济林/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="49">
+                <a href="子文件/农学/水产类/水产养殖学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/水产类/海洋渔业科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/水产类/水族科学与技术/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/水产类/水生动物医学/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="50">
+                <a href="子文件/农学/草学类/草业科学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/农学/草学类/草坪科学与工程/热门院校模板.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="51">
+                <a href="子文件/医学/基础医学类/基础医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/基础医学类/生物医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/基础医学类/生物医学科学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="52">
+                <a href="子文件/医学/临床医学类/临床医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/麻醉学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/医学影像学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/眼视光医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/精神医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/放射医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/临床医学类/儿科学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="53">
+                <a href="子文件/医学/口腔医学类/口腔医学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="54">
+                <a href="子文件/医学/公共卫生与预防医学类/预防医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/公共卫生与预防医学类/食品卫生与营养学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/公共卫生与预防医学类/妇幼保健医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/公共卫生与预防医学类/卫生监督.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/公共卫生与预防医学类/全球健康学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="55">
+                <a href="子文件/医学/中医学类/中医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/针灸推拿学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/藏医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/蒙医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/维医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/壮医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/哈医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/傣医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/回医学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/中医康复学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/中医养生学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/中医儿科学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中医学类/中医骨伤科学.html"><li class="选项2">查看</li></a>
+
+            </ul>
+            <ul class="hide" data-type="56">
+                <a href="子文件/医学/中西医结合类/中西医临床医学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="57">
+                <a href="子文件/医学/药学类/药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/药物制剂.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/临床药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/药事管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/药物分析.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/药物化学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/海洋药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/药学类/化妆品科学与技术.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="58">
+                <a href="子文件/医学/中药学类/中药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中药学类/中药资源与开发.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中药学类/藏药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中药学类/蒙药学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中药学类/中药制药.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/中药学类/中草药栽培与鉴定.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="59">
+                <a href="子文件/医学/法医学类/法医学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="60">
+                <a href="子文件/医学/医学技术类/医学检验技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/医学实验技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/医学影像技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/眼视光学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/康复治疗学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/口腔医学技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/卫生检验与检疫.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/听力与言语康复学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/康复物理治疗.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/康复作业治疗.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/医学技术类/智能医学工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="61">
+                <a href="子文件/医学/护理学类/护理学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/医学/护理学类/助产学.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="62">
+                <a href="子文件/管理学/管理科学与工程类/管理科学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/信息管理与信息系统.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/工程造价/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/房地产开发与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/工程造价/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/保密管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/邮政管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/大数据管理与应用.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/工程审计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/计算金融.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/管理科学与工程类/应急管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="63">
+                <a href="子文件/管理学/工商管理类/工商管理/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/市场营销/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/会计学/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/财务管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/国际商务.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/人力资源管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/审计学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/资产评估.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/物业管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/文化产业管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/劳动关系.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/体育经济与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/财务会计教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/市场营销教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工商管理类/零售业管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="64">
+                <a href="子文件/管理学/农业经济管理类/农业经济管理/热门院校模板.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/农业经济管理类/农业区域发展.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="65">
+                <a href="子文件/管理学/公共管理类/公共事业管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/行政管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/劳动与社会保障.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/土地资源管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/城市管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/海关管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/交通管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/海事管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/公共关系学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/健康服务与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/海警后勤管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/医疗产品管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/医疗保险.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/公共管理类/养老服务管理.html"><li class="选项2">查看</li></a>
+
+            </ul>
+            <ul class="hide" data-type="66">
+                <a href="子文件/管理学/图书情报与档案管理类/图书馆学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/图书情报与档案管理类/档案学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/图书情报与档案管理类/信息资源管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="67">
+                <a href="子文件/管理学/物流管理与工程类/物流管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/物流管理与工程类/物流工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/物流管理与工程类/采购管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/物流管理与工程类/供应链管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="68">
+                <a href="子文件/管理学/工业工程类/工业工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工业工程类/标准化工程.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/工业工程类/质量管理工程.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="69">
+                <a href="子文件/管理学/电子商务类/电子商务.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/电子商务类/电子商务与法律.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/电子商务类/跨境电子商务.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="70">
+                <a href="子文件/管理学/旅游管理类/旅游管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/旅游管理类/酒店管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/旅游管理类/会展经济与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/管理学/旅游管理类/旅游管理与服务教育.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="71">
+                <a href="子文件/艺术学/艺术学理论类/艺术史论.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/艺术学理论类/艺术管理.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="72">
+                <a href="子文件/艺术学/音乐与舞蹈学类/音乐表演.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/音乐学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/作曲与作曲技术理论.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/舞蹈表演.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/舞蹈学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/舞蹈编导.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/舞蹈教育.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/航空服务艺术与管理.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/流行音乐.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/音乐治疗.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/音乐与舞蹈学类/流行舞蹈.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="73">
+                <a href="子文件/艺术学/戏剧与影视学类/表演.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/戏剧学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/电影学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/戏剧影视文学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/广播电视编导.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/戏剧影视导演.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/戏剧影视美术设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/录音艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/播音与主持艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/动画.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/影视摄影与制作.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/影视技术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/戏剧与影视学类/戏剧教育.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="74">
+                <a href="子文件/艺术学/美术学类/美术学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/绘画.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/雕塑.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/摄影.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/书法学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/中国画.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/实验艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/跨媒体艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/文物保护与修复.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/美术学类/漫画.html"><li class="选项2">查看</li></a>
+            </ul>
+            <ul class="hide" data-type="75">
+                <a href="子文件/艺术学/设计学类/艺术设计学.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/视觉传达设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/环境设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/产品设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/服装与服饰设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/公共艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/工艺美术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/数字媒体艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/艺术与科技.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/陶瓷艺术设计.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/新媒体艺术.html"><li class="选项2">查看</li></a>
+                <a href="子文件/艺术学/设计学类/包装设计.html"><li class="选项2">查看</li></a>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .hide {
+        display: none;
+    }
+    *{
+        padding:0;
+        margin: 0;
+    }
+    .查询部分{
+        width:1180px;
+        height:200px;
+    }
+    .查询字{
+        font-size: 40px;
+        color:white;
+        font-weight: 700;
+        padding-top: 60px;
+    }
+    .输入框{
+        margin-top: 20px;
+        width:500px;
+        height:40px;
+        font-size: 20px;
+    }
+    .按钮{
+        margin-top: 20px;
+        width:80px;
+        height:40px;
+        background-color: skyblue;
+        font-size: 20px;
+        color:white;
+        border-radius: 8px;
+        box-shadow:5px 5px 5px -2px rgba(0,0,0,0.3);
+    }
+    .主要区域{
+        width:1180px;
+        height:600px;
+        margin:auto;
+    }
+    .选择区域{
+        width:1180px;
+        height:80px;
+    }
+    .选择1{
+        width:180px;
+        height:50px;
+        float:left;
+        margin-right:30px;
+        margin-left: 10px;
+        margin-top:15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        text-decoration: none;
+    }
+    .选择2{
+        width:180px;
+        height:50px;
+        float:left;
+        margin-right:30px;
+        margin-top:15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        text-decoration: none;
+    }
+    .选择3{
+        width:180px;
+        height:50px;
+        float:left;
+        margin-right:30px;
+        margin-top:15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        text-decoration: none;
+    }
+    .选择器:hover{
+        background-color: #00b3b3;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .选择1:hover{
+        background-color: #00b3b3;
+    }
+    .选择2:hover{
+        background-color: #00b3b3;
+    }
+    .选择3:hover{
+        background-color: #00b3b3;
+    }
+    .数据展示{
+        width:1180px;
+        height:520px;
+
+    }
+    .门类{
+        width:250px;
+        height:520px;
+        float:left;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .专业类{
+        width:250px;
+        height:520px;
+        float:left;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .专业名称{
+        width:280px;
+        height:520px;
+        float:left;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .专业代码{
+        width:200px;
+        height:520px;
+        float:left;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .开设院校{
+        width:180px;
+        height: 520px;
+        float: left;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    .标题1{
+        width:190px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .标题2{
+        width:190px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .标题3{
+        width:280px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .标题4{
+        width:160px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .标题5{
+        width:160px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .标题6{
+        width:190px;
+        height:50px;
+        font-size: 20px;
+        padding-left: 20px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+    .选项1{
+        width:190px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项2{
+        width:190px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项3{
+        width:280px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项4{
+        width:160px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项5{
+        width:160px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项6{
+        width:190px;
+        height:50px;
+        font-size: 18px;
+        padding-left: 20px;
+        line-height: 50px;
+    }
+    .选项a:hover{
+        background-color:rgba(0,0,0,0.1);
+        color:#00b3b3;
+        text-decoration: none;
+    }
+    .选项1:hover{
+        background-color:rgba(0,0,0,0.1)
+    }
+    .选项2:hover{
+        background-color:rgba(0,0,0,0.1)
+    }
+    a:hover{
+        text-decoration: none;
+    }
+</style>
+<div id="div6">2022山东省扬帆启航高考志愿智能决策平台 All rights reserved.</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.page.js"></script>
+<script>
+    $(function () {
+
+    })
+
+
+    $(".major a").click(function () {
+        let dataType = $(this).attr("data-type");
+        $(".专业类 ul").each(function(index){
+            console.log(index)
+            if (index  == dataType) {
+                $(this).removeClass("hide");
+            } else {
+                $(this).addClass("hide");
+            }
+        });
+    })
+    $(".专业类 ul a").click(function () {
+        let dataType = $(this).attr("data-type");
+        $(".专业名称 ul").each(function(){
+            let index = $(this).attr("data-type");
+            if (index  == dataType) {
+                $(this).removeClass("hide");
+            } else {
+                $(this).addClass("hide");
+            }
+        })
+        $(".专业代码 ul").each(function(){
+            let index = $(this).attr("data-type");
+            if (index  == dataType) {
+                $(this).removeClass("hide");
+            } else {
+                $(this).addClass("hide");
+            }
+        });
+        $(".开设院校 ul").each(function(){
+            let index = $(this).attr("data-type");
+            if (index  == dataType) {
+                $(this).removeClass("hide");
+            } else {
+                $(this).addClass("hide");
+            }
+        });
+    })
+
+
+    $(".tcdPageCode").createPage({
+        pageCount:100,
+        current:1,
+        backFn:function(p){
+            //console.log(p);
+        }
+    });
+</script>
+
+</body>
+</html>

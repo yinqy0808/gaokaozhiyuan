@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>山东省扬帆启航高考志愿智能决策平台</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
+</head>
+<body>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: #84EFF8;
+        text-decoration: none;
+    }
+    .院校库1{
+        width:1180px;
+        height:1000px;
+        margin:auto;
+
+    }
+    .查询{
+        width:1180px;
+        height:40px;
+        margin:auto;
+        font-size: 20px;
+        text-align: left;
+        padding:0 0px;
+    }
+    .查询1{
+        padding-right: 20px;
+        float:left;
+    }
+    .查询2{
+        padding-right: 20px;
+        float:left;
+    }
+    .查询部分{
+        width:1180px;
+        height:50px;
+
+    }
+    .输入框{
+        margin-top: 5px;
+        width:500px;
+        height:40px;
+        float:left;
+        font-size: 20px;
+    }
+    .btn{
+        margin-top: 5px;
+        width:80px;
+        height:40px;
+        background-color: skyblue;
+        font-size: 20px;
+        color:white;
+        float:left;
+        border-radius: 8px;
+        box-shadow:5px 5px 5px -2px rgba(0,0,0,0.3);
+    }
+    .院校所在地{
+        margin-top: 20px;
+        width:1180px;
+        height:80px;
+    }
+    .院校{
+        width:150px;
+        font-size: 20px;
+        font-weight: 700;
+        float:left;
+    }
+    .所在地{
+        width:1030px;
+        height:80px;
+        float:left;
+    }
+    .地点{
+        float:left;
+        padding:0;
+        margin-right:20px;
+        height:40px;
+        font-size: 16px;
+    }
+    .全{
+        margin-top: 30px;
+        width:1180px;
+        height:40px;
+    }
+    .头{
+        width:150px;
+        font-size: 20px;
+        font-weight: 700;
+        float:left;
+    }
+    .身{
+        width:1030px;
+        height:40px;
+        float:left;
+    }
+    .尾{
+        float:left;
+        padding:0;
+        margin-right:20px;
+        height:40px;
+        font-size: 16px;
+    }
+    .院校性质{
+        margin-top: 20px;
+        width:1180px;
+        height:40px;
+    }
+    .院校{
+        width:150px;
+        font-size: 20px;
+        font-weight: 700;
+        float:left;
+    }
+    .大性质{
+        width:1030px;
+        height:40px;
+        float:left;
+    }
+    .性质{
+        float:left;
+        padding:0;
+        margin-right:20px;
+        height:40px;
+        font-size: 16px;
+    }
+    .综合{
+        margin-top: 50px;
+        width:1180px;
+        height:500px;
+    }
+    th{
+        font-size: 20px;
+        font-weight: 700;
+        padding:20px 10px;
+    }
+    td{
+        font-size: 16px;
+        padding:20px 10px;
+        text-align: center;
+    }
+</style>
+<div id="hearder2" class="clearfix">
+    <div class="logo">
+        <img src="images/前程似锦logo.png">
+    </div>
+    <div class="logo-name">高考志愿智能决策平台</div>
+    <div class="form-tools">
+        <form id="search" name="search" method="post">
+            <div class="tools-link" style="text-align: center">
+                赠言：博览群书添雅趣<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缕缕书香胜饭香
+            </div>
+        </form>
+    </div>
+</div>
+<div id="menu-box" class="clearfix" >
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="院校库.html">院校库</a></li>
+        <li><a href="专业库.html">专业库</a></li>
+        <li><a href="智能填报.html">智能填报</a></li>
+        <li><a href="高考资讯/高考常识(高考资讯首页).html">高考资讯</a></li>
+        <li><a href="联系我们.html">联系我们</a></li>
+
+    </ul>
+</div>
+<div id="slider-box" style="background:url(images/slider4.jpg) center center;"></div>
+<!-- detail -->
+<div class="院校库1">
+    <div class="查询部分">
+        <input type="text" class="输入框" placeholder="请输入院校名称" id="schoolName" />
+        <button class="btn" id="_search">查询</button>
+    </div>
+    <div class="院校所在地">
+        <div class="院校">院校所在地</div>
+        <div class="所在地">
+            <div class="地点"><input type="radio" name="address" value="北京">北京</div>
+            <div class="地点"><input type="radio" name="address" value="天津">天津</div>
+            <div class="地点"><input type="radio" name="address" value="河北">河北</div>
+            <div class="地点"><input type="radio" name="address" value="山西">山西</div>
+            <div class="地点"><input type="radio" name="address" value="内蒙古">内蒙古</div>
+            <div class="地点"><input type="radio" name="address" value="辽宁">辽宁</div>
+            <div class="地点"><input type="radio" name="address" value="吉林">吉林</div>
+            <div class="地点"><input type="radio" name="address" value="黑龙江">黑龙江</div>
+            <div class="地点"><input type="radio" name="address" value="上海">上海</div>
+            <div class="地点"><input type="radio" name="address" value="江苏">江苏</div>
+            <div class="地点"><input type="radio" name="address" value="浙江">浙江</div>
+            <div class="地点"><input type="radio" name="address" value="安徽">安徽</div>
+            <div class="地点"><input type="radio" name="address" value="福建">福建</div>
+            <div class="地点"><input type="radio" name="address" value="江西">江西</div>
+            <div class="地点"><input type="radio" name="address" value="山东">山东</div>
+            <div class="地点"><input type="radio" name="address" value="河南">河南</div>
+            <div class="地点"><input type="radio" name="address" value="湖北">湖北</div>
+            <div class="地点"><input type="radio" name="address" value="湖南">湖南</div>
+            <div class="地点"><input type="radio" name="address" value="广州">广州</div>
+            <div class="地点"><input type="radio" name="address" value="广西">广西</div>
+            <div class="地点"><input type="radio" name="address" value="海南">海南</div>
+            <div class="地点"><input type="radio" name="address" value="重庆">重庆</div>
+            <div class="地点"><input type="radio" name="address" value="四川">四川</div>
+            <div class="地点"><input type="radio" name="address" value="贵州">贵州</div>
+            <div class="地点"><input type="radio" name="address" value="云南">云南</div>
+            <div class="地点"><input type="radio" name="address" value="西藏">西藏</div>
+            <div class="地点"><input type="radio" name="address" value="陕西">陕西</div>
+            <div class="地点"><input type="radio" name="address" value="甘肃">甘肃</div>
+            <div class="地点"><input type="radio" name="address" value="青海">青海</div>
+            <div class="地点"><input type="radio" name="address" value="宁夏">宁夏</div>
+            <div class="地点"><input type="radio" name="address" value="新疆">新疆</div>
+        </div>
+    </div>
+    <div class="全">
+        <div class="头">主管部门类别</div>
+        <div class="身">
+            <div class="尾"><input type="radio" name="department" value="">全部</div>
+            <div class="尾"><input type="radio" name="department" value="教育部">教育部</div>
+            <div class="尾"><input type="radio" name="department" value="其他部委">其他部委</div>
+            <div class="尾"><input type="radio" name="department" value="地方">地方</div>
+            <div class="尾"><input type="radio" name="department" value="军校">军校</div>
+        </div>
+    </div>
+    <div class="全">
+        <div class="头">院校类型</div>
+        <div class="身">
+            <div class="尾"><input type="radio" name="type" value="">全部</div>
+            <div class="尾"><input type="radio" name="type" value="综合">综合</div>
+            <div class="尾"><input type="radio" name="type" value="工科">工科</div>
+            <div class="尾"><input type="radio" name="type" value="农业">农业</div>
+            <div class="尾"><input type="radio" name="type" value="林业">林业</div>
+            <div class="尾"><input type="radio" name="type" value="医药">医药</div>
+            <div class="尾"><input type="radio" name="type" value="师范">师范</div>
+            <div class="尾"><input type="radio" name="type" value="语言">语言</div>
+            <div class="尾"><input type="radio" name="type" value="财经">财经</div>
+            <div class="尾"><input type="radio" name="type" value="政法">政法</div>
+            <div class="尾"><input type="radio" name="type" value="体育">体育</div>
+            <div class="尾"><input type="radio" name="type" value="艺术">艺术</div>
+            <div class="尾"><input type="radio" name="type" value="民族">民族</div>
+            <div class="尾"><input type="radio" name="type" value="其他">其他</div>
+            
+        </div>
+    </div>
+    <div class="全">
+        <div class="头">学历层次</div>
+        <div class="身">
+            <div class="尾"><input type="radio" name="level" value="">全部</div>
+            <div class="尾"><input type="radio" name="level" value="本科">本科</div>
+            <div class="尾"><input type="radio" name="level" value="高职（专科）">高职（专科）</div>
+        </div>
+    </div>
+    <div class="院校性质">
+        <div class="院校">院校性质</div>
+        <div class="大性质">
+            <div class="性质"><input type="radio" name="nature" value=""/>全部</div>
+            <div class="性质"><input type="radio" name="nature" value="firstMajor"/>一流学科建设高校</div>
+            <div class="性质"><input type="radio" name="nature" value="firstSchool"/>一流大学建设高校</div>
+            <div class="性质"><input type="radio" name="nature" value="graduateSchool"/>研究生院</div>
+        </div>
+    </div>
+    <div class="综合">
+        <table class="框架">
+            <thead>
+                <tr>
+                    <th>院校名称</th>
+                    <th>院校所在地</th>
+                    <th>教育行政主管部门</th>
+                    <th>院校类型</th>
+                    <th>学历层次</th>
+                    <th>一流大学建设高校</th>
+                    <th>一流学科建设高校</th>
+                    <th>研究生院</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="div6" style="position:fixed;bottom:0">2022山东省扬帆启航高考志愿智能决策平台 All rights reserved.</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.page.js"></script>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:100,
+        current:1,
+        backFn:function(p){
+            //console.log(p);
+        }
+    }); 
+    $('#_search').click(function() {
+        if($('#schoolName').val() != ''){
+            var data = {
+                name:$('#schoolName').val()
+            }
+        }else{
+            let select_subject = $("input[name='nature']:checked").val();
+            var data = {
+                'address':$("input[name='address']:checked").val(),
+                'department':$("input[name='department']:checked").val(),
+                'level':$("input[name='level']:checked").val(),
+                'type':$("input[name='type']:checked").val(),
+            }
+            if(select_subject == 'firstMajor'){
+                data.firstMajor = 1
+            }
+            if(select_subject == 'firstSchool'){
+                data.firstSchool = 1
+            }
+            if(select_subject == 'graduateSchool'){
+                data.graduateSchool = 1
+            }
+        }
+        $('#table_body').empty()
+        $.ajax({
+            url:'http://localhost:8090/school/list',
+            type:'POST',
+            data,
+            success:(res) => {
+                var str = '';
+                for(let i = 0;i<res.data.length;i++){
+                    str+=`
+                    <tr>
+                        <td>${res.data[i].name}</td>
+                        <td>${res.data[i].address}</td>
+                        <td>${res.data[i].department}</td>
+                        <td>${res.data[i].type}</td>
+                        <td>${res.data[i].level}</td>
+                        <td>${res.data[i].firstSchool}</td>
+                        <td>${res.data[i].firstMajor}</td>
+                        <td>${res.data[i].graduateSchool}</td>
+                        </tr>
+                    `
+                }
+                $('#table_body').append(str)
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

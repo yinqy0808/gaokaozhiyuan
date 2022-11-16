@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>山东省扬帆启航高考志愿智能决策平台</title>
+    <link rel="stylesheet" href="css/style1.css" type="text/css" media="all"/>
+</head>
+<style>
+    .数据输入{
+        width: 1180px;
+        height:200px;
+        margin: auto;
+    }
+    .数据1{
+        width: 1180px;
+        height:100px;
+        text-align: center;
+    }
+    .数据2{
+        width: 1180px;
+        height:100px;
+        text-align: center;
+    }
+    .省份{
+        width: 200px;
+        height:50px;
+        font-size: 18px;
+        color:gray;
+        margin: 25px;
+
+    }
+    .科类1{
+        width: 200px;
+        height:50px;
+        font-size: 18px;
+        color:gray;
+        margin: 25px;
+    }
+    .科类2{
+        width: 200px;
+        height:50px;
+        font-size: 18px;
+        color:gray;
+        margin: 25px;
+    }
+    .科类3{
+        width: 200px;
+        height:50px;
+        font-size: 18px;
+        color:gray;
+        margin: 25px;
+    }
+    .成绩{
+        width: 200px;
+        height:50px;
+        font-size: 18px;
+        color:rgba(0,0,0);
+        margin: 25px;
+        margin-right: 180px;
+        text-align: center;
+    }
+    .推荐{
+        width: 100px;
+        height:50px;
+        font-size: 18px;
+        color:gray;
+        text-align: center;
+    }
+    .综合{
+        margin: auto;
+        margin-top: 50px;
+        width:1180px;
+        height:500px;
+        text-align: center;
+    }
+    th{
+        font-size: 20px;
+        font-weight: 700;
+        padding:20px 70px;
+    }
+    td{
+        font-size: 16px;
+        padding:20px 10px;
+    }
+</style>
+<div id="hearder2" class="clearfix">
+    <div class="logo">
+        <img src="images/前程似锦logo.png">
+    </div>
+    <div class="logo-name">高考志愿智能决策平台</div>
+    <div class="form-tools">
+        <form id="search" name="search" method="post">
+            <div class="tools-link" style="text-align: center">
+                赠言：博览群书添雅趣<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;缕缕书香胜饭香
+            </div>
+        </form>
+    </div>
+</div>
+<div id="menu-box" class="clearfix" >
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="院校库.html">院校库</a></li>
+        <li><a href="专业库.html">专业库</a></li>
+        <li><a href="智能填报.html">智能填报</a></li>
+        <li><a href="高考资讯/高考常识(高考资讯首页).html">高考资讯</a></li>
+        <li><a href="联系我们.html">联系我们</a></li>
+    </ul>
+</div>
+<div id="slider-box" style="background:url(images/slider4.jpg) center center;"></div>
+<!-- detail -->
+<div class="数据输入">
+    <div class="数据1">
+        <select class="省份" id="province">
+            <option>省份</option>
+            <option>北京</option>
+            <option>天津</option>
+            <option>河北</option>
+            <option>山西</option>
+            <option>内蒙古</option>
+            <option>辽宁</option>
+            <option>吉林</option>
+            <option>黑龙江</option>
+            <option>上海</option>
+            <option>江苏</option>
+            <option>浙江</option>
+            <option>安徽</option>
+            <option>福建</option>
+            <option>江西</option>
+            <option>山东</option>
+            <option>河南</option>
+            <option>湖北</option>
+            <option>湖南</option>
+            <option>广州</option>
+            <option>广西</option>
+            <option>海南</option>
+            <option>重庆</option>
+            <option>四川</option>
+            <option>贵州</option>
+            <option>云南</option>
+            <option>西藏</option>
+            <option>陕西</option>
+            <option>甘肃</option>
+            <option>青海</option>
+            <option>宁夏</option>
+            <option>新疆</option>
+        </select>
+        <select class="科类1" id="subjectOne">
+            <option>选科1</option>
+            <option>物理</option>
+            <option>化学</option>
+            <option>生物</option>
+            <option>地理</option>
+            <option>历史</option>
+            <option>政治</option>
+        </select>
+        <select class="科类2" id="subjectTwo">
+            <option>选科2</option>
+            <option>物理</option>
+            <option>化学</option>
+            <option>生物</option>
+            <option>地理</option>
+            <option>历史</option>
+            <option>政治</option>
+        </select>
+        <select class="科类3" id="subjectThere">
+            <option>选科3</option>
+            <option>物理</option>
+            <option>化学</option>
+            <option>生物</option>
+            <option>地理</option>
+            <option>历史</option>
+            <option>政治</option>
+        </select>
+    </div>
+    <div class="数据2">
+        <input type="text" class="成绩" placeholder="成绩" id="score"/>
+        <input type="button" class="推荐" value="推荐" id="recommend">
+    </div>
+</div>
+<div class="综合">
+    <table class="框架">
+        <thead>
+        <tr>
+            <th>院校所在地</th>
+            <th>学校名称</th>
+            <th>学历层次</th>
+            <th>专业名称</th>
+            <th>选考科目要求</th>
+        </tr>
+        </thead>
+       <tbody id="table-body">
+
+       </tbody>
+    </table>
+</div>
+<div id="div6" style="position:fixed;bottom:0">2022山东省扬帆启航高考志愿智能决策平台 All rights reserved.</div>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.page.js"></script>
+<script>
+    $(".tcdPageCode").createPage({
+        pageCount:100,
+        current:1,
+        backFn:function(p){
+            //console.log(p);
+        }
+    });
+    $("#recommend").click(function () {
+        let data = {}
+        data.province = $('#province').val()
+        data.majorOne = $('#subjectOne').val()
+        data.majorTwo = $('#subjectTwo').val()
+        data.majorThere = $('#subjectThere').val()
+        data.score = $('#score').val()
+        $('#table-body').empty()
+        $.ajax({
+            url:'http://localhost:8090/major/list',
+            type:'POST',
+            data,
+            success:(res) => {
+                var str = '';
+                for(let i = 0;i<res.data.length;i++){
+                    str+=`
+                    <tr>
+                        <td>${res.data[i].province}</td>
+                        <td>${res.data[i].schoolName}</td>
+                        <td>${res.data[i].level}</td>
+                        <td>${res.data[i].majorName}</td>
+                        <td>${res.data[i].require}</td>
+                        </tr>
+                    `
+                }
+                $('#table-body').append(str)
+            }
+        })
+    })
+</script>
+
+</body>
+</html>
